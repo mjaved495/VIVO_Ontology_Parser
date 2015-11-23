@@ -1,0 +1,20 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000741">
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000071"/>
+          <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001716"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:label>is encoded in</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000740">
+    <rdfs:label>implements</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+</rdf:RDF>

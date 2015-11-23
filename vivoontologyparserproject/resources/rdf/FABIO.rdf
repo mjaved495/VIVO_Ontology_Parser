@@ -1,0 +1,29 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://purl.obolibrary.org/obo/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <owl:Class rdf:about="http://purl.org/spar/fabio/Comment">
+    <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+    <j.0:IAO_0000115>A verbal or written remark concerning some entity. In written form, a comment is often appended to that entity and termed an annotation. Within computer programs or ontologies, comments are added to enhance human understanding, and are usually prefaced by a special syntactic symbol that ensures they are ignored during execution of the program.
+
+has super-classes</j.0:IAO_0000115>
+    <j.0:IAO_0000115>A verbal or written remark concerning some entity. In written form, a comment is often appended to that entity and termed an annotation. Within computer programs or ontologies, comments are added to enhance human understanding, and are usually prefaced by</j.0:IAO_0000115>
+    <rdfs:label>Comment</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/spar/fabio/Erratum">
+    <rdfs:label>Erratum</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+    <j.0:IAO_0000115>A formal correction to an error introduced by the publisher into a previously published document.</j.0:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/spar/fabio/ClinicalGuideline">
+    <j.0:IAO_0000115>A recommendation on the appropriate treatment and care of people with a specific disease or condition, based on the best available evidence, designed to help healthcare professionals in their work.</j.0:IAO_0000115>
+    <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+    <rdfs:label>Clinical Guideline</rdfs:label>
+  </owl:Class>
+  <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+  <rdf:Description rdf:about="http://purl.org/spar/fabio/">
+    <rdfs:label>FaBiO (FRBR-Aligned Bibliographic Ontology)</rdfs:label>
+  </rdf:Description>
+  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+</rdf:RDF>

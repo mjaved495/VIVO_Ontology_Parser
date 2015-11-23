@@ -1,0 +1,12 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+  <rdf:Description rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/public#File">
+    <rdfs:label>File</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/public#FileByteStream">
+    <rdfs:label>FileByteStream</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

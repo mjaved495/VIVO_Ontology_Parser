@@ -1,0 +1,12 @@
+<http://purl.org/spar/cito/isCitedAsDataSourceBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/cito/isCitedAsDataSourceBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The cited entity is cited as a data source by the citing entity."@en .
+<http://purl.org/spar/cito/isCitedAsDataSourceBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/cito/citesAsDataSource> .
+<http://purl.org/spar/cito/isCitedAsDataSourceBy> <http://www.w3.org/2000/01/rdf-schema#label> "is cited as data source by" .
+<http://purl.org/spar/cito/isCitedAsDataSourceBy> <http://www.w3.org/2000/01/rdf-schema#label> "is cited as data source by"@en .
+<http://purl.org/spar/cito/citesAsDataSource> <http://www.w3.org/2000/01/rdf-schema#label> "cites as data source"@en .
+<http://purl.org/spar/cito/citesAsDataSource> <http://www.w3.org/2000/01/rdf-schema#label> "cites as data source" .
+<http://purl.org/spar/cito/citesAsDataSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/cito/citesAsDataSource> <http://www.w3.org/2000/01/rdf-schema#comment> "The citing entity cites the cited entity as source of data."@en .
+<http://purl.org/spar/cito/> <http://www.w3.org/2000/01/rdf-schema#label> "CiTO (Citation Typing Ontology)" .
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .

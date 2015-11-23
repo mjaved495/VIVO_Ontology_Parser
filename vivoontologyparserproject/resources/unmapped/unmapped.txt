@@ -1,0 +1,7 @@
+[http://vitro.mannlib.cornell.edu/ns/vitro/0.7#moniker, http://www.w3.org/2000/01/rdf-schema#label, "moniker (deprecated)"]
+[http://purl.org/net/OCRe/study_design.owl, http://www.w3.org/2000/01/rdf-schema#label, "OCRe study design"]
+[http://vitro.mannlib.cornell.edu/ns/vitro/0.7, http://www.w3.org/2000/01/rdf-schema#label, "Vitro internals"]
+[http://purl.org/net/OCRe/research.owl, http://www.w3.org/2000/01/rdf-schema#label, "OCRe research"]
+[http://aims.fao.org/aos/geopolitical.owl, http://www.w3.org/2000/01/rdf-schema#label, "Geopolitical Ontology"]
+[http://vitro.mannlib.cornell.edu/ns/vitro/0.7#descriptionAnnot, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2002/07/owl#AnnotationProperty]
+[http://vitro.mannlib.cornell.edu/ns/vitro/public, http://www.w3.org/2000/01/rdf-schema#label, "Vitro Public Ontology"]

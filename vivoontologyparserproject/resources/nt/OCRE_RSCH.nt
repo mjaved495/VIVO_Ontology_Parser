@@ -1,0 +1,2 @@
+<http://purl.org/net/OCRe/research.owl#Interventional_study> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/OCRe/research.owl> <http://www.w3.org/2000/01/rdf-schema#label> "OCRe research" .

@@ -1,67 +1,154 @@
-2015-11-21 22:38:25 DEBUG JenaIOEnvironment:180 - Failed to find configuration: location-mapping.ttl;location-mapping.rdf;location-mapping.n3;etc/location-mapping.rdf;etc/location-mapping.n3;etc/location-mapping.ttl
-2015-11-21 22:38:25 INFO  VivoOntologyParser:132 - Step: Loading VIVO Ontology...
-2015-11-21 22:38:25 DEBUG StreamManager:93 - open(/Users/mj495/Documents/GitHub/VIVO_Ontology_Parser/vivoontologyparserproject/resources/input/vivo-isf-public-1.6.nt)
-2015-11-21 22:38:25 DEBUG StreamManager:112 - Not mapped: /Users/mj495/Documents/GitHub/VIVO_Ontology_Parser/vivoontologyparserproject/resources/input/vivo-isf-public-1.6.nt
-2015-11-21 22:38:25 DEBUG StreamManager:142 - Found: /Users/mj495/Documents/GitHub/VIVO_Ontology_Parser/vivoontologyparserproject/resources/input/vivo-isf-public-1.6.nt (LocatorFile)
-2015-11-21 22:38:25 DEBUG RDFDataMgr:874 - Found: /Users/mj495/Documents/GitHub/VIVO_Ontology_Parser/vivoontologyparserproject/resources/input/vivo-isf-public-1.6.nt
-2015-11-21 22:38:26 INFO  VivoOntologyParser:135 - Step: Loading VIVO Ontology... COMPLETED.
-2015-11-21 22:38:26 INFO  ResourceTypeReader:48 - Step: Listing annotation properties.
-2015-11-21 22:38:26 INFO  ResourceTypeReader:63 - Annotation properties count: 28
-2015-11-21 22:38:26 INFO  ResourceTypeReader:69 - Step: Listing data properties.
-2015-11-21 22:38:26 INFO  ResourceTypeReader:84 - Data properties count: 216
-2015-11-21 22:38:26 INFO  ResourceTypeReader:90 - Step: Listing object properties.
-2015-11-21 22:38:26 INFO  ResourceTypeReader:105 - Object properties count: 191
-2015-11-21 22:38:26 INFO  VivoOntologyParser:114 - Step: Creating Namespace-OntologyName Map...
-2015-11-21 22:38:26 INFO  VivoOntologyParser:119 - Step: Creating Namespace-OntologyName Map... COMPLETED.
-2015-11-21 22:38:26 INFO  VivoOntologyParser:123 - Step: Building empty RDF models...
-2015-11-21 22:38:26 INFO  VivoOntologyParser:128 - Step: Building empty RDF models... COMPLETED.
-2015-11-21 22:38:26 INFO  VivoOntologyParser:140 - Step: Reading VIVO ontology statements
-2015-11-21 22:38:26 INFO  VivoOntologyParser:143 - : RDF triples count: 6780 triples.
-2015-11-21 22:38:26 INFO  VivoOntologyParser:191 - Step: Mapping blank nodes to ontologies.
-2015-11-21 22:38:26 INFO  VivoOntologyParser:205 - Step: Mapping blank nodes to ontologies...COMPLETED
-2015-11-21 22:38:26 WARN  VivoOntologyParser:156 - No mapping found for:[http://www.w3.org/2001/XMLSchema#int, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2000/01/rdf-schema#Datatype]
-2015-11-21 22:38:26 WARN  VivoOntologyParser:156 - No mapping found for:[http://www.w3.org/2002/07/owl#DeprecatedProperty, http://www.w3.org/2000/01/rdf-schema#label, "deprecated property"]
-2015-11-21 22:38:26 WARN  VivoOntologyParser:156 - No mapping found for:[http://vitro.mannlib.cornell.edu/ns/vitro/public#File, http://www.w3.org/2000/01/rdf-schema#label, "File"]
-2015-11-21 22:38:26 WARN  VivoOntologyParser:156 - No mapping found for:[http://vitro.mannlib.cornell.edu/ns/vitro/public, http://www.w3.org/2000/01/rdf-schema#label, "Vitro Public Ontology"]
-2015-11-21 22:38:26 WARN  VivoOntologyParser:156 - No mapping found for:[http://vitro.mannlib.cornell.edu/ns/vitro/0.7#moniker, http://www.w3.org/2000/01/rdf-schema#label, "moniker (deprecated)"]
-2015-11-21 22:38:26 WARN  VivoOntologyParser:156 - No mapping found for:[http://vitro.mannlib.cornell.edu/ns/vitro/0.7, http://www.w3.org/2000/01/rdf-schema#label, "Vitro internals"]
-2015-11-21 22:38:26 WARN  VivoOntologyParser:156 - No mapping found for:[http://www.w3.org/2000/01/rdf-schema#Literal, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2000/01/rdf-schema#Datatype]
-2015-11-21 22:38:26 WARN  VivoOntologyParser:156 - No mapping found for:[http://www.w3.org/2001/XMLSchema#boolean, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2000/01/rdf-schema#Datatype]
-2015-11-21 22:38:26 WARN  VivoOntologyParser:156 - No mapping found for:[http://www.w3.org/2001/XMLSchema#date, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2000/01/rdf-schema#Datatype]
-2015-11-21 22:38:26 WARN  VivoOntologyParser:156 - No mapping found for:[http://www.w3.org/2000/01/rdf-schema#label, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2002/07/owl#AnnotationProperty]
-2015-11-21 22:38:26 WARN  VivoOntologyParser:156 - No mapping found for:[http://www.w3.org/2001/XMLSchema#anyURI, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2000/01/rdf-schema#Datatype]
-2015-11-21 22:38:26 WARN  VivoOntologyParser:156 - No mapping found for:[http://vitro.mannlib.cornell.edu/ns/vitro/public#FileByteStream, http://www.w3.org/2000/01/rdf-schema#label, "FileByteStream"]
-2015-11-21 22:38:26 WARN  VivoOntologyParser:156 - No mapping found for:[http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2000/01/rdf-schema#Datatype]
-2015-11-21 22:38:26 WARN  VivoOntologyParser:156 - No mapping found for:[http://www.w3.org/2002/07/owl#topObjectProperty, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2002/07/owl#ObjectProperty]
-2015-11-21 22:38:26 WARN  VivoOntologyParser:156 - No mapping found for:[http://vitro.mannlib.cornell.edu/ns/vitro/0.7#descriptionAnnot, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2002/07/owl#AnnotationProperty]
-2015-11-21 22:38:26 WARN  VivoOntologyParser:156 - No mapping found for:[http://aims.fao.org/aos/geopolitical.owl, http://www.w3.org/2000/01/rdf-schema#label, "Geopolitical Ontology"]
-2015-11-21 22:38:26 WARN  VivoOntologyParser:156 - No mapping found for:[http://purl.org/vocab/vann/preferredNamespaceUri, http://www.w3.org/2000/01/rdf-schema#label, "preferred namespace URI"]
-2015-11-21 22:38:26 WARN  VivoOntologyParser:156 - No mapping found for:[http://www.w3.org/2001/XMLSchema#string, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2000/01/rdf-schema#Datatype]
-2015-11-21 22:38:26 WARN  VivoOntologyParser:156 - No mapping found for:[http://purl.org/net/OCRe/study_design.owl, http://www.w3.org/2000/01/rdf-schema#label, "OCRe study design"]
-2015-11-21 22:38:26 WARN  VivoOntologyParser:156 - No mapping found for:[http://www.w3.org/2002/07/owl#sameAs, http://www.w3.org/2000/01/rdf-schema#label, "mismo que"@es]
-2015-11-21 22:38:26 WARN  VivoOntologyParser:156 - No mapping found for:[http://www.w3.org/2000/01/rdf-schema#comment, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2002/07/owl#AnnotationProperty]
-2015-11-21 22:38:26 WARN  VivoOntologyParser:156 - No mapping found for:[http://www.w3.org/2002/07/owl#sameAs, http://www.w3.org/2000/01/rdf-schema#label, "same as"]
-2015-11-21 22:38:26 WARN  VivoOntologyParser:156 - No mapping found for:[http://www.w3.org/2000/01/rdf-schema#isDefinedBy, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2002/07/owl#AnnotationProperty]
-2015-11-21 22:38:26 WARN  VivoOntologyParser:156 - No mapping found for:[http://www.w3.org/2000/01/rdf-schema#isDefinedBy, http://www.w3.org/2000/01/rdf-schema#label, "is defined by"]
-2015-11-21 22:38:26 WARN  VivoOntologyParser:156 - No mapping found for:[http://purl.org/net/OCRe/research.owl, http://www.w3.org/2000/01/rdf-schema#label, "OCRe research"]
-2015-11-21 22:38:26 WARN  VivoOntologyParser:156 - No mapping found for:[http://purl.org/vocab/vann/preferredNamespaceUri, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2002/07/owl#DatatypeProperty]
-2015-11-21 22:38:26 INFO  VivoOntologyParser:98 - Step: Saving OCRE_STAT ontology: (triple count:1)
-2015-11-21 22:38:26 INFO  VivoOntologyParser:98 - Step: Saving VIVO ontology: (triple count:1595)
-2015-11-21 22:38:26 INFO  VivoOntologyParser:98 - Step: Saving BIBO ontology: (triple count:941)
-2015-11-21 22:38:26 INFO  VivoOntologyParser:98 - Step: Saving OCRE_SD ontology: (triple count:41)
-2015-11-21 22:38:26 INFO  VivoOntologyParser:98 - Step: Saving EVENT ontology: (triple count:38)
-2015-11-21 22:38:26 INFO  VivoOntologyParser:98 - Step: Saving SOFTWARE ontology: (triple count:12)
-2015-11-21 22:38:26 INFO  VivoOntologyParser:98 - Step: Saving FOAF ontology: (triple count:86)
-2015-11-21 22:38:26 INFO  VivoOntologyParser:98 - Step: Saving GEO ontology: (triple count:986)
-2015-11-21 22:38:26 INFO  VivoOntologyParser:98 - Step: Saving OCRE_SP ontology: (triple count:1)
-2015-11-21 22:38:26 INFO  VivoOntologyParser:98 - Step: Saving FABIO ontology: (triple count:16)
-2015-11-21 22:38:26 INFO  VivoOntologyParser:98 - Step: Saving OCRE_RSCH ontology: (triple count:0)
-2015-11-21 22:38:26 INFO  VivoOntologyParser:98 - Step: Saving SKOS ontology: (triple count:25)
-2015-11-21 22:38:26 INFO  VivoOntologyParser:98 - Step: Saving OBO ontology: (triple count:1512)
-2015-11-21 22:38:26 INFO  VivoOntologyParser:98 - Step: Saving RO ontology: (triple count:2)
-2015-11-21 22:38:26 INFO  VivoOntologyParser:98 - Step: Saving VCARD ontology: (triple count:1501)
-2015-11-21 22:38:26 INFO  VivoOntologyParser:98 - Step: Saving CITO ontology: (triple count:12)
-2015-11-21 22:38:26 INFO  VivoOntologyParser:98 - Step: Saving C4O ontology: (triple count:37)
-2015-11-21 22:38:26 INFO  VivoOntologyParser:98 - Step: Saving DC ontology: (triple count:5)
-2015-11-21 22:38:26 INFO  VivoOntologyParser:79 - Step: Saving unmapped triple (count:26)
-2015-11-21 22:38:26 INFO  VivoOntologyParser:70 - Process completed.
+2015-11-23 13:11:25 INFO  VivoOntologyParser:182 - Step: Loading VIVO Ontology...
+2015-11-23 13:11:25 INFO  VivoOntologyParser:185 - Step: Loading VIVO Ontology... COMPLETED.
+2015-11-23 13:11:25 INFO  VivoOntologyParser:380 - List of Namespaces:
+2015-11-23 13:11:25 INFO  VivoOntologyParser:382 - 		http://aims.fao.org/aos/
+2015-11-23 13:11:25 INFO  VivoOntologyParser:382 - 		http://aims.fao.org/aos/geopolitical.owl#
+2015-11-23 13:11:25 INFO  VivoOntologyParser:382 - 		http://isf/
+2015-11-23 13:11:25 INFO  VivoOntologyParser:382 - 		http://purl.obolibrary.org/obo/
+2015-11-23 13:11:25 INFO  VivoOntologyParser:382 - 		http://purl.org/NET/c4dm/
+2015-11-23 13:11:25 INFO  VivoOntologyParser:382 - 		http://purl.org/NET/c4dm/event.owl#
+2015-11-23 13:11:25 INFO  VivoOntologyParser:382 - 		http://purl.org/dc/terms/
+2015-11-23 13:11:25 INFO  VivoOntologyParser:382 - 		http://purl.org/net/OCRe/
+2015-11-23 13:11:25 INFO  VivoOntologyParser:382 - 		http://purl.org/net/OCRe/research.owl#
+2015-11-23 13:11:25 INFO  VivoOntologyParser:382 - 		http://purl.org/net/OCRe/statistics.owl#
+2015-11-23 13:11:25 INFO  VivoOntologyParser:382 - 		http://purl.org/net/OCRe/study_design.owl#
+2015-11-23 13:11:25 INFO  VivoOntologyParser:382 - 		http://purl.org/net/OCRe/study_protocol.owl#
+2015-11-23 13:11:25 INFO  VivoOntologyParser:382 - 		http://purl.org/ontology/bibo/
+2015-11-23 13:11:25 INFO  VivoOntologyParser:382 - 		http://purl.org/spar/c4o/
+2015-11-23 13:11:25 INFO  VivoOntologyParser:382 - 		http://purl.org/spar/cito/
+2015-11-23 13:11:25 INFO  VivoOntologyParser:382 - 		http://purl.org/spar/fabio/
+2015-11-23 13:11:25 INFO  VivoOntologyParser:382 - 		http://purl.org/vocab/vann/
+2015-11-23 13:11:25 INFO  VivoOntologyParser:382 - 		http://vitro.mannlib.cornell.edu/ns/vitro/
+2015-11-23 13:11:25 INFO  VivoOntologyParser:382 - 		http://vitro.mannlib.cornell.edu/ns/vitro/0.7
+2015-11-23 13:11:25 INFO  VivoOntologyParser:382 - 		http://vitro.mannlib.cornell.edu/ns/vitro/0.7#
+2015-11-23 13:11:25 INFO  VivoOntologyParser:382 - 		http://vitro.mannlib.cornell.edu/ns/vitro/public#
+2015-11-23 13:11:25 INFO  VivoOntologyParser:382 - 		http://vivoweb.org/ontology/
+2015-11-23 13:11:25 INFO  VivoOntologyParser:382 - 		http://vivoweb.org/ontology/core#
+2015-11-23 13:11:25 INFO  VivoOntologyParser:382 - 		http://vivoweb.org/ontology/scientific-research#
+2015-11-23 13:11:25 INFO  VivoOntologyParser:382 - 		http://www.ebi.ac.uk/efo/swo/
+2015-11-23 13:11:25 INFO  VivoOntologyParser:382 - 		http://www.geneontology.org/formats/oboInOwl#
+2015-11-23 13:11:25 INFO  VivoOntologyParser:382 - 		http://www.obofoundry.org/ro/ro.owl#
+2015-11-23 13:11:25 INFO  VivoOntologyParser:382 - 		http://www.w3.org/1999/02/22-rdf-syntax-ns#
+2015-11-23 13:11:25 INFO  VivoOntologyParser:382 - 		http://www.w3.org/2000/01/rdf-schema#
+2015-11-23 13:11:25 INFO  VivoOntologyParser:382 - 		http://www.w3.org/2001/XMLSchema#
+2015-11-23 13:11:25 INFO  VivoOntologyParser:382 - 		http://www.w3.org/2002/07/owl#
+2015-11-23 13:11:25 INFO  VivoOntologyParser:382 - 		http://www.w3.org/2003/06/sw-vocab-status/ns#
+2015-11-23 13:11:25 INFO  VivoOntologyParser:382 - 		http://www.w3.org/2004/02/skos/
+2015-11-23 13:11:25 INFO  VivoOntologyParser:382 - 		http://www.w3.org/2004/02/skos/core#
+2015-11-23 13:11:25 INFO  VivoOntologyParser:382 - 		http://www.w3.org/2006/vcard/
+2015-11-23 13:11:25 INFO  VivoOntologyParser:382 - 		http://www.w3.org/2006/vcard/ns#
+2015-11-23 13:11:25 INFO  VivoOntologyParser:382 - 		http://www.w3.org/2008/05/skos#
+2015-11-23 13:11:25 INFO  VivoOntologyParser:382 - 		http://xmlns.com/foaf/0.1/
+2015-11-23 13:11:25 INFO  ResourceTypeReader:48 - Step: Listing annotation properties.
+2015-11-23 13:11:25 INFO  ResourceTypeReader:63 - Annotation properties count: 28
+2015-11-23 13:11:25 INFO  ResourceTypeReader:69 - Step: Listing data properties.
+2015-11-23 13:11:25 INFO  ResourceTypeReader:84 - Data properties count: 216
+2015-11-23 13:11:25 INFO  ResourceTypeReader:90 - Step: Listing object properties.
+2015-11-23 13:11:25 INFO  ResourceTypeReader:105 - Object properties count: 191
+2015-11-23 13:11:25 INFO  VivoOntologyParser:155 - Step: Creating Namespace-OntologyName Map...
+2015-11-23 13:11:25 INFO  VivoOntologyParser:160 - Step: Creating Namespace-OntologyName Map... COMPLETED.
+2015-11-23 13:11:25 INFO  VivoOntologyParser:167 - Step: Building empty RDF models...
+2015-11-23 13:11:25 INFO  VivoOntologyParser:172 - Step: Building empty RDF models... COMPLETED.
+2015-11-23 13:11:25 INFO  VivoOntologyParser:194 - Step: Reading VIVO ontology statements
+2015-11-23 13:11:25 INFO  VivoOntologyParser:197 - : RDF triples count: 6780 triples.
+2015-11-23 13:11:25 INFO  VivoOntologyParser:322 - Step: Mapping blank nodes to ontologies.
+2015-11-23 13:11:25 INFO  VivoOntologyParser:336 - Step: Mapping blank nodes to ontologies...COMPLETED
+2015-11-23 13:11:25 INFO  VivoOntologyParser:136 - Step: Saving OCRE_STAT ontology: (triple count:1)
+2015-11-23 13:11:25 INFO  VivoOntologyParser:136 - Step: Saving VITRO ontology: (triple count:3)
+2015-11-23 13:11:25 INFO  VivoOntologyParser:136 - Step: Saving VANN ontology: (triple count:3)
+2015-11-23 13:11:25 INFO  VivoOntologyParser:136 - Step: Saving VIVO ontology: (triple count:1598)
+2015-11-23 13:11:25 INFO  VivoOntologyParser:136 - Step: Saving BIBO ontology: (triple count:943)
+2015-11-23 13:11:25 INFO  VivoOntologyParser:136 - Step: Saving OCRE_SD ontology: (triple count:41)
+2015-11-23 13:11:25 INFO  VivoOntologyParser:136 - Step: Saving EVENT ontology: (triple count:38)
+2015-11-23 13:11:25 INFO  VivoOntologyParser:136 - Step: Saving SOFTWARE ontology: (triple count:12)
+2015-11-23 13:11:25 INFO  VivoOntologyParser:136 - Step: Saving FOAF ontology: (triple count:86)
+2015-11-23 13:11:25 INFO  VivoOntologyParser:136 - Step: Saving GEO ontology: (triple count:986)
+2015-11-23 13:11:25 INFO  VivoOntologyParser:136 - Step: Saving OCRE_SP ontology: (triple count:1)
+2015-11-23 13:11:25 INFO  VivoOntologyParser:136 - Step: Saving FABIO ontology: (triple count:16)
+2015-11-23 13:11:25 INFO  VivoOntologyParser:136 - Step: Saving OCRE_RSCH ontology: (triple count:0)
+2015-11-23 13:11:25 INFO  VivoOntologyParser:136 - Step: Saving SKOS ontology: (triple count:25)
+2015-11-23 13:11:25 INFO  VivoOntologyParser:136 - Step: Saving OBO ontology: (triple count:1515)
+2015-11-23 13:11:25 INFO  VivoOntologyParser:136 - Step: Saving RO ontology: (triple count:2)
+2015-11-23 13:11:25 INFO  VivoOntologyParser:136 - Step: Saving VCARD ontology: (triple count:1503)
+2015-11-23 13:11:25 INFO  VivoOntologyParser:136 - Step: Saving CITO ontology: (triple count:12)
+2015-11-23 13:11:25 INFO  VivoOntologyParser:136 - Step: Saving C4O ontology: (triple count:38)
+2015-11-23 13:11:25 INFO  VivoOntologyParser:136 - Step: Saving DC ontology: (triple count:5)
+2015-11-23 13:11:25 INFO  VivoOntologyParser:113 - Step: Saving unmapped triple (count:7)
+2015-11-23 13:11:25 INFO  VivoOntologyParser:93 - Process completed.
+2015-11-23 13:12:04 INFO  VivoOntologyParser:182 - Step: Loading VIVO Ontology...
+2015-11-23 13:12:05 INFO  VivoOntologyParser:185 - Step: Loading VIVO Ontology... COMPLETED.
+2015-11-23 13:12:05 INFO  VivoOntologyParser:380 - List of Namespaces:
+2015-11-23 13:12:05 INFO  VivoOntologyParser:382 - 		http://aims.fao.org/aos/
+2015-11-23 13:12:05 INFO  VivoOntologyParser:382 - 		http://aims.fao.org/aos/geopolitical.owl#
+2015-11-23 13:12:05 INFO  VivoOntologyParser:382 - 		http://isf/
+2015-11-23 13:12:05 INFO  VivoOntologyParser:382 - 		http://purl.obolibrary.org/obo/
+2015-11-23 13:12:05 INFO  VivoOntologyParser:382 - 		http://purl.org/NET/c4dm/
+2015-11-23 13:12:05 INFO  VivoOntologyParser:382 - 		http://purl.org/NET/c4dm/event.owl#
+2015-11-23 13:12:05 INFO  VivoOntologyParser:382 - 		http://purl.org/dc/terms/
+2015-11-23 13:12:05 INFO  VivoOntologyParser:382 - 		http://purl.org/net/OCRe/
+2015-11-23 13:12:05 INFO  VivoOntologyParser:382 - 		http://purl.org/net/OCRe/research.owl#
+2015-11-23 13:12:05 INFO  VivoOntologyParser:382 - 		http://purl.org/net/OCRe/statistics.owl#
+2015-11-23 13:12:05 INFO  VivoOntologyParser:382 - 		http://purl.org/net/OCRe/study_design.owl#
+2015-11-23 13:12:05 INFO  VivoOntologyParser:382 - 		http://purl.org/net/OCRe/study_protocol.owl#
+2015-11-23 13:12:05 INFO  VivoOntologyParser:382 - 		http://purl.org/ontology/bibo/
+2015-11-23 13:12:05 INFO  VivoOntologyParser:382 - 		http://purl.org/spar/c4o/
+2015-11-23 13:12:05 INFO  VivoOntologyParser:382 - 		http://purl.org/spar/cito/
+2015-11-23 13:12:05 INFO  VivoOntologyParser:382 - 		http://purl.org/spar/fabio/
+2015-11-23 13:12:05 INFO  VivoOntologyParser:382 - 		http://purl.org/vocab/vann/
+2015-11-23 13:12:05 INFO  VivoOntologyParser:382 - 		http://vitro.mannlib.cornell.edu/ns/vitro/
+2015-11-23 13:12:05 INFO  VivoOntologyParser:382 - 		http://vitro.mannlib.cornell.edu/ns/vitro/0.7
+2015-11-23 13:12:05 INFO  VivoOntologyParser:382 - 		http://vitro.mannlib.cornell.edu/ns/vitro/0.7#
+2015-11-23 13:12:05 INFO  VivoOntologyParser:382 - 		http://vitro.mannlib.cornell.edu/ns/vitro/public#
+2015-11-23 13:12:05 INFO  VivoOntologyParser:382 - 		http://vivoweb.org/ontology/
+2015-11-23 13:12:05 INFO  VivoOntologyParser:382 - 		http://vivoweb.org/ontology/core#
+2015-11-23 13:12:05 INFO  VivoOntologyParser:382 - 		http://vivoweb.org/ontology/scientific-research#
+2015-11-23 13:12:05 INFO  VivoOntologyParser:382 - 		http://www.ebi.ac.uk/efo/swo/
+2015-11-23 13:12:05 INFO  VivoOntologyParser:382 - 		http://www.geneontology.org/formats/oboInOwl#
+2015-11-23 13:12:05 INFO  VivoOntologyParser:382 - 		http://www.obofoundry.org/ro/ro.owl#
+2015-11-23 13:12:05 INFO  VivoOntologyParser:382 - 		http://www.w3.org/1999/02/22-rdf-syntax-ns#
+2015-11-23 13:12:05 INFO  VivoOntologyParser:382 - 		http://www.w3.org/2000/01/rdf-schema#
+2015-11-23 13:12:05 INFO  VivoOntologyParser:382 - 		http://www.w3.org/2001/XMLSchema#
+2015-11-23 13:12:05 INFO  VivoOntologyParser:382 - 		http://www.w3.org/2002/07/owl#
+2015-11-23 13:12:05 INFO  VivoOntologyParser:382 - 		http://www.w3.org/2003/06/sw-vocab-status/ns#
+2015-11-23 13:12:05 INFO  VivoOntologyParser:382 - 		http://www.w3.org/2004/02/skos/
+2015-11-23 13:12:05 INFO  VivoOntologyParser:382 - 		http://www.w3.org/2004/02/skos/core#
+2015-11-23 13:12:05 INFO  VivoOntologyParser:382 - 		http://www.w3.org/2006/vcard/
+2015-11-23 13:12:05 INFO  VivoOntologyParser:382 - 		http://www.w3.org/2006/vcard/ns#
+2015-11-23 13:12:05 INFO  VivoOntologyParser:382 - 		http://www.w3.org/2008/05/skos#
+2015-11-23 13:12:05 INFO  VivoOntologyParser:382 - 		http://xmlns.com/foaf/0.1/
+2015-11-23 13:12:05 INFO  ResourceTypeReader:48 - Step: Listing annotation properties.
+2015-11-23 13:12:05 INFO  ResourceTypeReader:63 - Annotation properties count: 28
+2015-11-23 13:12:05 INFO  ResourceTypeReader:69 - Step: Listing data properties.
+2015-11-23 13:12:05 INFO  ResourceTypeReader:84 - Data properties count: 216
+2015-11-23 13:12:05 INFO  ResourceTypeReader:90 - Step: Listing object properties.
+2015-11-23 13:12:05 INFO  ResourceTypeReader:105 - Object properties count: 191
+2015-11-23 13:12:05 INFO  VivoOntologyParser:155 - Step: Creating Namespace-OntologyName Map...
+2015-11-23 13:12:05 INFO  VivoOntologyParser:160 - Step: Creating Namespace-OntologyName Map... COMPLETED.
+2015-11-23 13:12:05 INFO  VivoOntologyParser:167 - Step: Building empty RDF models...
+2015-11-23 13:12:05 INFO  VivoOntologyParser:172 - Step: Building empty RDF models... COMPLETED.
+2015-11-23 13:12:05 INFO  VivoOntologyParser:194 - Step: Reading VIVO ontology statements
+2015-11-23 13:12:05 INFO  VivoOntologyParser:197 - : RDF triples count: 6780 triples.
+2015-11-23 13:12:05 INFO  VivoOntologyParser:322 - Step: Mapping blank nodes to ontologies.
+2015-11-23 13:12:05 INFO  VivoOntologyParser:336 - Step: Mapping blank nodes to ontologies...COMPLETED
+2015-11-23 13:12:06 INFO  VivoOntologyParser:136 - Step: Saving OCRE_STAT ontology: (triple count:1)
+2015-11-23 13:12:06 INFO  VivoOntologyParser:136 - Step: Saving VITRO ontology: (triple count:3)
+2015-11-23 13:12:06 INFO  VivoOntologyParser:136 - Step: Saving VANN ontology: (triple count:3)
+2015-11-23 13:12:06 INFO  VivoOntologyParser:136 - Step: Saving VIVO ontology: (triple count:1598)
+2015-11-23 13:12:06 INFO  VivoOntologyParser:136 - Step: Saving BIBO ontology: (triple count:943)
+2015-11-23 13:12:06 INFO  VivoOntologyParser:136 - Step: Saving OCRE_SD ontology: (triple count:41)
+2015-11-23 13:12:06 INFO  VivoOntologyParser:136 - Step: Saving EVENT ontology: (triple count:38)
+2015-11-23 13:12:06 INFO  VivoOntologyParser:136 - Step: Saving SOFTWARE ontology: (triple count:12)
+2015-11-23 13:12:06 INFO  VivoOntologyParser:136 - Step: Saving FOAF ontology: (triple count:86)
+2015-11-23 13:12:06 INFO  VivoOntologyParser:136 - Step: Saving GEO ontology: (triple count:986)
+2015-11-23 13:12:06 INFO  VivoOntologyParser:136 - Step: Saving OCRE_SP ontology: (triple count:1)
+2015-11-23 13:12:06 INFO  VivoOntologyParser:136 - Step: Saving FABIO ontology: (triple count:16)
+2015-11-23 13:12:06 INFO  VivoOntologyParser:136 - Step: Saving OCRE_RSCH ontology: (triple count:0)
+2015-11-23 13:12:06 INFO  VivoOntologyParser:136 - Step: Saving SKOS ontology: (triple count:25)
+2015-11-23 13:12:06 INFO  VivoOntologyParser:136 - Step: Saving OBO ontology: (triple count:1515)
+2015-11-23 13:12:07 INFO  VivoOntologyParser:136 - Step: Saving RO ontology: (triple count:2)
+2015-11-23 13:12:07 INFO  VivoOntologyParser:136 - Step: Saving VCARD ontology: (triple count:1503)
+2015-11-23 13:12:07 INFO  VivoOntologyParser:136 - Step: Saving CITO ontology: (triple count:12)
+2015-11-23 13:12:07 INFO  VivoOntologyParser:136 - Step: Saving C4O ontology: (triple count:38)
+2015-11-23 13:12:07 INFO  VivoOntologyParser:136 - Step: Saving DC ontology: (triple count:5)
+2015-11-23 13:12:07 INFO  VivoOntologyParser:113 - Step: Saving unmapped triple (count:7)
+2015-11-23 13:12:07 INFO  VivoOntologyParser:93 - Process completed.

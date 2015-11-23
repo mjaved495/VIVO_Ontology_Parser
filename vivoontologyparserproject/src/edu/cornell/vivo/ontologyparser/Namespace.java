@@ -36,21 +36,15 @@ public enum Namespace {
 	VCARD_NS("http://www.w3.org/2006/vcard/ns#", "VCARD"),  // VCARD
 	VCARD("http://www.w3.org/2006/vcard/", "VCARD"),	// VCARD (label "VCARD")
 	
+	VITRO("http://vitro.mannlib.cornell.edu/ns/vitro/public#", "VITRO"), //VITRO
+	
 	VIVO_CORE("http://vivoweb.org/ontology/core#", "VIVO"),  // VIVO
 	VIVO("http://vivoweb.org/ontology/", "VIVO"), // VIVO
-	SCIRES("http://vivoweb.org/ontology/scientific-research#", "VIVO") //VIVO
+	SCIRES("http://vivoweb.org/ontology/scientific-research#", "VIVO"), //VIVO
+	
+	VANN("http://purl.org/vocab/vann/", "VANN"), // VANN (/preferredNamespaceUri)	
 	;
-	
-//VANN("http://purl.org/vocab/vann/"), // NOT_OK (/preferredNamespaceUri)
-//OCRE("http://purl.org/net/OCRe/"),  // (RESEARCH, STUDY_DESGIN ONTOLOGY)
 
-//http://isf/   deprecated_op
-//http://aims.fao.org/aos/   <http://aims.fao.org/aos/geopolitical.owl>
-//http://vitro.mannlib.cornell.edu/ns/vitro/0.7 (label "Vitro internals")
-//http://vitro.mannlib.cornell.edu/ns/vitro/0.7#   (#descriptionAnnot, #exampleAnnot, #moniker)
-//http://vitro.mannlib.cornell.edu/ns/vitro/public#  (#File, #FileByStream)
-//http://vitro.mannlib.cornell.edu/ns/vitro/  (/public "Vitro Public Ontology")
-	
 	private String namespace;
 	private String ontologyName;
 

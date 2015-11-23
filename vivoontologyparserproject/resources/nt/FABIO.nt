@@ -1,0 +1,16 @@
+<http://purl.org/spar/fabio/ClinicalGuideline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/ClinicalGuideline> <http://purl.obolibrary.org/obo/IAO_0000115> "A recommendation on the appropriate treatment and care of people with a specific disease or condition, based on the best available evidence, designed to help healthcare professionals in their work." .
+<http://purl.org/spar/fabio/ClinicalGuideline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/bibo/Document> .
+<http://purl.org/spar/fabio/ClinicalGuideline> <http://www.w3.org/2000/01/rdf-schema#label> "Clinical Guideline" .
+<http://purl.org/spar/fabio/Comment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/bibo/Document> .
+<http://purl.org/spar/fabio/Comment> <http://purl.obolibrary.org/obo/IAO_0000115> "A verbal or written remark concerning some entity. In written form, a comment is often appended to that entity and termed an annotation. Within computer programs or ontologies, comments are added to enhance human understanding, and are usually prefaced by a special syntactic symbol that ensures they are ignored during execution of the program.\n\nhas super-classes" .
+<http://purl.org/spar/fabio/Comment> <http://purl.obolibrary.org/obo/IAO_0000115> "A verbal or written remark concerning some entity. In written form, a comment is often appended to that entity and termed an annotation. Within computer programs or ontologies, comments are added to enhance human understanding, and are usually prefaced by" .
+<http://purl.org/spar/fabio/Comment> <http://www.w3.org/2000/01/rdf-schema#label> "Comment" .
+<http://purl.org/spar/fabio/Comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/> <http://www.w3.org/2000/01/rdf-schema#label> "FaBiO (FRBR-Aligned Bibliographic Ontology)" .
+<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/spar/fabio/Erratum> <http://www.w3.org/2000/01/rdf-schema#label> "Erratum" .
+<http://purl.org/spar/fabio/Erratum> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/bibo/Document> .
+<http://purl.org/spar/fabio/Erratum> <http://purl.obolibrary.org/obo/IAO_0000115> "A formal correction to an error introduced by the publisher into a previously published document." .
+<http://purl.org/spar/fabio/Erratum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
