@@ -1,0 +1,38 @@
+<http://purl.org/spar/c4o/GlobalCitationCount> <http://www.w3.org/2000/01/rdf-schema#label> "Global Citation Count" .
+<http://purl.org/spar/c4o/GlobalCitationCount> <http://purl.obolibrary.org/obo/IAO_0000115> "The number of times a work has been cited globally, as determined from a particular bibliographic information source on a particular date." .
+<http://purl.org/spar/c4o/GlobalCitationCount> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/IAO_0000032> .
+<http://purl.org/spar/c4o/GlobalCitationCount> <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#descriptionAnnot> "The number of times a work has been cited globally, as determined from a particular bibliographic information source on a particular date." .
+<http://purl.org/spar/c4o/GlobalCitationCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/c4o/hasGlobalCitationFrequency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/c4o/hasGlobalCitationFrequency> <http://www.w3.org/2000/01/rdf-schema#label> "has global citation frequency" .
+<http://purl.org/spar/c4o/hasGlobalCitationFrequency> <http://purl.obolibrary.org/obo/IAO_0000115> "A property linking a publication entity to an instance of c40:GlobalCitationCount that specifies how many times a work has been cited by others, according to a particular information source on a particular date." .
+<http://purl.org/spar/c4o/hasGlobalCitationFrequency> <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#descriptionAnnot> "A property linking a publication entity to the property c40:GlobalCitationCount that specify how many times a work has been cited by others, according to a particular information source on a particular date." .
+<http://purl.org/spar/c4o/hasGlobalCitationFrequency> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/c4o/GlobalCitationCount> .
+<http://purl.org/spar/c4o/hasGlobalCountSource> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/c4o/BibliographicInformationSource> .
+<http://purl.org/spar/c4o/hasGlobalCountSource> <http://www.w3.org/2000/01/rdf-schema#label> "has global count source" .
+<http://purl.org/spar/c4o/hasGlobalCountSource> <http://purl.obolibrary.org/obo/IAO_0000115> "A property linking an instance of c40:GlobalCitationCount to the bibliographic information source providing the global citation count information for a particular publication on a particular date." .
+<http://purl.org/spar/c4o/hasGlobalCountSource> <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#descriptionAnnot> "A property linking the property c40:GlobalCitationCount to the bibliographic information source providing the global citation count information for a particular publication on a particular date." .
+<http://purl.org/spar/c4o/hasGlobalCountSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/c4o/hasGlobalCountSource> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/c4o/GlobalCitationCount> .
+<http://purl.org/spar/c4o/hasGlobalCountValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/spar/c4o/hasGlobalCountValue> <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#descriptionAnnot> "An integer defining the value of the global citation count of a cited entity recorded from a named bibliographic information source on a particular date." .
+<http://purl.org/spar/c4o/hasGlobalCountValue> <http://www.w3.org/2000/01/rdf-schema#label> "has global count value" .
+<http://purl.org/spar/c4o/hasGlobalCountValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://purl.org/spar/c4o/hasGlobalCountValue> <http://purl.obolibrary.org/obo/IAO_0000115> "An integer defining the value of the global citation count of a cited entity recorded from a named bibliographic information source on a particular date." .
+<http://purl.org/spar/c4o/hasGlobalCountValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/c4o/GlobalCitationCount> .
+<http://purl.org/spar/c4o/hasGlobalCountDate> <http://purl.obolibrary.org/obo/IAO_0000115> "The date on which the global citation count of the cited entity was recorded from a named bibliographic information source." .
+<http://purl.org/spar/c4o/hasGlobalCountDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/c4o/GlobalCitationCount> .
+<http://purl.org/spar/c4o/hasGlobalCountDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vivoweb.org/ontology/core#dateTimeValue> .
+<http://purl.org/spar/c4o/hasGlobalCountDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/c4o/hasGlobalCountDate> <http://www.w3.org/2000/01/rdf-schema#label> "has global count date" .
+<http://purl.org/spar/c4o/hasGlobalCountDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://vivoweb.org/ontology/core#DateTimeValue> .
+<http://www.w3.org/2001/XMLSchema#int> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://purl.org/spar/c4o/BibliographicInformationSource> <http://www.w3.org/2000/01/rdf-schema#label> "Bibliographic Information Source" .
+<http://purl.org/spar/c4o/BibliographicInformationSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/ERO_0001716> .
+<http://purl.org/spar/c4o/BibliographicInformationSource> <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#descriptionAnnot> "A source of information about bibliographic citations, such as Google Scholar, Web of Science or Scopus." .
+<http://purl.org/spar/c4o/BibliographicInformationSource> <http://purl.obolibrary.org/obo/IAO_0000115> "A source of information about bibliographic citations, such as Google Scholar, Web of Science or Scopus." .
+<http://purl.org/spar/c4o/BibliographicInformationSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vitro.mannlib.cornell.edu/ns/vitro/0.7#descriptionAnnot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/spar/c4o/> <http://www.w3.org/2000/01/rdf-schema#label> "Citation Counting and Context Characterization Ontology" .
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .

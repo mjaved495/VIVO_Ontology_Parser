@@ -1,0 +1,125 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://purl.obolibrary.org/obo/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:j.1="http://www.w3.org/2004/02/skos/core#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Group">
+    <j.0:IAO_0000111>group</j.0:IAO_0000111>
+    <j.0:IAO_0000117>PERSON: Scott Hoffmann</j.0:IAO_0000117>
+    <j.0:IAO_0000115>A collection of individual agents.</j.0:IAO_0000115>
+    <rdfs:comment>A group</rdfs:comment>
+    <j.0:IAO_0000115>A collection of individual agents (and may itself play the role of a Agent, ie. something that can perform actions).</j.0:IAO_0000115>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Group</rdfs:label>
+    <j.0:IAO_0000112>A group can also be an organization but need not be; typically used for looser associations of people or organizations acting together in some fashion, not necessarily through formal agreement or on a long-term basis. Added to the VIVO ontology to be able to support informal and perhaps even private groups of people around an idea, funding opportunity, or event.
+
+see: http://xmlns.com/foaf/spec/#term_Group</j.0:IAO_0000112>
+  </owl:Class>
+  <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+    <j.0:IAO_0000115>An instance of a human being (Homo sapiens)</j.0:IAO_0000115>
+    <rdfs:label>Person</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#hasResearchArea"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <j.0:IAO_0000117>PERSON: Melissa Haendel</j.0:IAO_0000117>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#Credential"/>
+        <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#eligibleFor"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#geographicFocus"/>
+        <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#GeographicRegion"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <j.0:IAO_0000118></j.0:IAO_0000118>
+    <j.0:IAO_0000111>person</j.0:IAO_0000111>
+    <j.0:IAO_0000115>The most general classification of a person</j.0:IAO_0000115>
+    <rdfs:comment>A person</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization">
+    <j.0:IAO_0000115>A kind of Agent corresponding to social instititutions such as companies, societies etc.</j.0:IAO_0000115>
+    <j.0:IAO_0000112>This class will display all the instances in the subclasses below it, as well as any organizations that were added as part of this generic class because there wasn't a specific class available.</j.0:IAO_0000112>
+    <rdfs:label>Organization</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+        <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#GeographicLocation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#dateTimeInterval"/>
+        <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <j.0:IAO_0000118></j.0:IAO_0000118>
+    <j.0:IAO_0000112>Only use if no specific subclasses of foaf:organization desribe the organization.</j.0:IAO_0000112>
+    <j.0:IAO_0000117>PERSON: Scott Hoffmann</j.0:IAO_0000117>
+    <j.0:IAO_0000115>A generic class encompassing several types of organizations.</j.0:IAO_0000115>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+    </rdfs:subClassOf>
+    <j.1:scopeNote xml:lang="en">Ued to describe an organization related to bibliographic items such as a publishing company, etc.</j.1:scopeNote>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#abbreviation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <j.0:IAO_0000111>organization</j.0:IAO_0000111>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment>An organization</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent">
+    <j.0:IAO_0000117>PERSON: Scott Hoffmann</j.0:IAO_0000117>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#freetextKeyword"/>
+        <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#featuredIn"/>
+        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <j.0:IAO_0000111>agent</j.0:IAO_0000111>
+    <j.0:IAO_0000112>see: http://xmlns.com/foaf/spec/#term_Agent</j.0:IAO_0000112>
+    <rdfs:comment>An agent</rdfs:comment>
+    <j.1:scopeNote xml:lang="en">Used to describe any "agent" related to bibliographic items. Such agents can be persons, organizations or groups of any kind.</j.1:scopeNote>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+    <j.0:IAO_0000115>Agents are things that do stuff</j.0:IAO_0000115>
+    <rdfs:label>Agent</rdfs:label>
+    <j.0:IAO_0000118></j.0:IAO_0000118>
+    <j.0:IAO_0000115>Things that do stuff.</j.0:IAO_0000115>
+  </owl:Class>
+  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/">
+    <rdfs:label>FOAF (Friend of a Friend)</rdfs:label>
+  </rdf:Description>
+  <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote"/>
+  <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+  <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
+  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+</rdf:RDF>

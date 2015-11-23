@@ -1,0 +1,12 @@
+_:B4d1d56e637ed15de66e15214a4a7c4f2 <http://www.w3.org/2002/07/owl#unionOf> _:B2f4c478174d45eaf28e46e44f2219733 .
+_:B4d1d56e637ed15de66e15214a4a7c4f2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:B2f4c478174d45eaf28e46e44f2219733 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.obolibrary.org/obo/ERO_0000071> .
+_:B2f4c478174d45eaf28e46e44f2219733 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Bad91033df88bc8cc872d6cd16b79106c .
+<http://www.ebi.ac.uk/efo/swo/SWO_0000740> <http://www.w3.org/2000/01/rdf-schema#label> "implements" .
+<http://www.ebi.ac.uk/efo/swo/SWO_0000740> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Bad91033df88bc8cc872d6cd16b79106c <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Bad91033df88bc8cc872d6cd16b79106c <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.obolibrary.org/obo/ERO_0001716> .
+<http://www.ebi.ac.uk/efo/swo/SWO_0000741> <http://www.w3.org/2000/01/rdf-schema#domain> _:B4d1d56e637ed15de66e15214a4a7c4f2 .
+<http://www.ebi.ac.uk/efo/swo/SWO_0000741> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ebi.ac.uk/efo/swo/SWO_0000741> <http://www.w3.org/2000/01/rdf-schema#label> "is encoded in" .
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .

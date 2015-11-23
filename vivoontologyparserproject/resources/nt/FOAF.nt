@@ -1,0 +1,86 @@
+<http://www.w3.org/2004/02/skos/core#scopeNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:B48aa0cdbd7e75ef4f94de139ccd54987 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/RO_0001025> .
+_:B48aa0cdbd7e75ef4f94de139ccd54987 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://vivoweb.org/ontology/core#GeographicLocation> .
+_:B48aa0cdbd7e75ef4f94de139ccd54987 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B1dd5f7effea9b6324574043da30aa7fe <http://www.w3.org/2002/07/owl#onProperty> <http://vivoweb.org/ontology/core#geographicFocus> .
+_:B1dd5f7effea9b6324574043da30aa7fe <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B1dd5f7effea9b6324574043da30aa7fe <http://www.w3.org/2002/07/owl#allValuesFrom> <http://vivoweb.org/ontology/core#GeographicRegion> .
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:B2304fcca5a9847898536af03db57e41b <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:B2304fcca5a9847898536af03db57e41b <http://www.w3.org/2002/07/owl#onProperty> <http://vivoweb.org/ontology/core#hasResearchArea> .
+_:B2304fcca5a9847898536af03db57e41b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://xmlns.com/foaf/0.1/Group> <http://purl.obolibrary.org/obo/IAO_0000111> "group" .
+<http://xmlns.com/foaf/0.1/Group> <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Scott Hoffmann" .
+<http://xmlns.com/foaf/0.1/Group> <http://purl.obolibrary.org/obo/IAO_0000115> "A collection of individual agents." .
+<http://xmlns.com/foaf/0.1/Group> <http://www.w3.org/2000/01/rdf-schema#comment> "A group" .
+<http://xmlns.com/foaf/0.1/Group> <http://purl.obolibrary.org/obo/IAO_0000115> "A collection of individual agents (and may itself play the role of a Agent, ie. something that can perform actions)." .
+<http://xmlns.com/foaf/0.1/Group> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Agent> .
+<http://xmlns.com/foaf/0.1/Group> <http://www.w3.org/2000/01/rdf-schema#label> "Group" .
+<http://xmlns.com/foaf/0.1/Group> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Group> <http://purl.obolibrary.org/obo/IAO_0000112> "A group can also be an organization but need not be; typically used for looser associations of people or organizations acting together in some fashion, not necessarily through formal agreement or on a long-term basis. Added to the VIVO ontology to be able to support informal and perhaps even private groups of people around an idea, funding opportunity, or event.\n\nsee: http://xmlns.com/foaf/spec/#term_Group" .
+<http://purl.obolibrary.org/obo/IAO_0000112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.obolibrary.org/obo/IAO_0000118> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:B147480c89a248c8c1535423d3bad73c0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B147480c89a248c8c1535423d3bad73c0 <http://www.w3.org/2002/07/owl#onProperty> <http://vivoweb.org/ontology/core#freetextKeyword> .
+_:B147480c89a248c8c1535423d3bad73c0 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.obolibrary.org/obo/IAO_0000111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.obolibrary.org/obo/IAO_0000117> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:B84171fa87cea47f495a7f1b735c022f2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B84171fa87cea47f495a7f1b735c022f2 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://xmlns.com/foaf/0.1/Organization> .
+_:B84171fa87cea47f495a7f1b735c022f2 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/BFO_0000051> .
+<http://xmlns.com/foaf/0.1/Person> <http://purl.obolibrary.org/obo/IAO_0000115> "An instance of a human being (Homo sapiens)" .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person" .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B2304fcca5a9847898536af03db57e41b .
+<http://xmlns.com/foaf/0.1/Person> <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Melissa Haendel" .
+<http://xmlns.com/foaf/0.1/Person> <http://purl.obolibrary.org/obo/IAO_0000118> "" .
+<http://xmlns.com/foaf/0.1/Person> <http://purl.obolibrary.org/obo/IAO_0000111> "person" .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Person> <http://purl.obolibrary.org/obo/IAO_0000115> "The most general classification of a person" .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#comment> "A person" .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B8213d8b2e5fdf1ed5af15f9f45032239 .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Agent> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B1dd5f7effea9b6324574043da30aa7fe .
+_:B8213d8b2e5fdf1ed5af15f9f45032239 <http://www.w3.org/2002/07/owl#onProperty> <http://vivoweb.org/ontology/core#eligibleFor> .
+_:B8213d8b2e5fdf1ed5af15f9f45032239 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://vivoweb.org/ontology/core#Credential> .
+_:B8213d8b2e5fdf1ed5af15f9f45032239 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B0383def63efe3f30cfed39511fcad08a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B0383def63efe3f30cfed39511fcad08a <http://www.w3.org/2002/07/owl#onProperty> <http://vivoweb.org/ontology/core#dateTimeInterval> .
+_:B0383def63efe3f30cfed39511fcad08a <http://www.w3.org/2002/07/owl#allValuesFrom> <http://vivoweb.org/ontology/core#DateTimeInterval> .
+<http://xmlns.com/foaf/0.1/Agent> <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Scott Hoffmann" .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B147480c89a248c8c1535423d3bad73c0 .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Be7059a7949c61b2a6687c0c0db9198cf .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Agent> <http://purl.obolibrary.org/obo/IAO_0000111> "agent" .
+<http://xmlns.com/foaf/0.1/Agent> <http://purl.obolibrary.org/obo/IAO_0000112> "see: http://xmlns.com/foaf/spec/#term_Agent" .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2000/01/rdf-schema#comment> "An agent" .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2004/02/skos/core#scopeNote> "Used to describe any \"agent\" related to bibliographic items. Such agents can be persons, organizations or groups of any kind."@en .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000004> .
+<http://xmlns.com/foaf/0.1/Agent> <http://purl.obolibrary.org/obo/IAO_0000115> "Agents are things that do stuff" .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agent" .
+<http://xmlns.com/foaf/0.1/Agent> <http://purl.obolibrary.org/obo/IAO_0000118> "" .
+<http://xmlns.com/foaf/0.1/Agent> <http://purl.obolibrary.org/obo/IAO_0000115> "Things that do stuff." .
+_:B22527c38a1b0ed8252eee34dd28c5e33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B22527c38a1b0ed8252eee34dd28c5e33 <http://www.w3.org/2002/07/owl#onProperty> <http://vivoweb.org/ontology/core#abbreviation> .
+_:B22527c38a1b0ed8252eee34dd28c5e33 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://xmlns.com/foaf/0.1/Organization> <http://purl.obolibrary.org/obo/IAO_0000115> "A kind of Agent corresponding to social instititutions such as companies, societies etc." .
+<http://xmlns.com/foaf/0.1/Organization> <http://purl.obolibrary.org/obo/IAO_0000112> "This class will display all the instances in the subclasses below it, as well as any organizations that were added as part of this generic class because there wasn't a specific class available." .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization" .
+<http://xmlns.com/foaf/0.1/Organization> <http://purl.obolibrary.org/obo/IAO_0000118> "" .
+<http://xmlns.com/foaf/0.1/Organization> <http://purl.obolibrary.org/obo/IAO_0000112> "Only use if no specific subclasses of foaf:organization desribe the organization." .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B22527c38a1b0ed8252eee34dd28c5e33 .
+<http://xmlns.com/foaf/0.1/Organization> <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Scott Hoffmann" .
+<http://xmlns.com/foaf/0.1/Organization> <http://purl.obolibrary.org/obo/IAO_0000115> "A generic class encompassing several types of organizations." .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Agent> .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2004/02/skos/core#scopeNote> "Ued to describe an organization related to bibliographic items such as a publishing company, etc."@en .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B0383def63efe3f30cfed39511fcad08a .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B84171fa87cea47f495a7f1b735c022f2 .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Organization> <http://purl.obolibrary.org/obo/IAO_0000111> "organization" .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "An organization" .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B48aa0cdbd7e75ef4f94de139ccd54987 .
+_:Be7059a7949c61b2a6687c0c0db9198cf <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.obolibrary.org/obo/IAO_0000030> .
+_:Be7059a7949c61b2a6687c0c0db9198cf <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Be7059a7949c61b2a6687c0c0db9198cf <http://www.w3.org/2002/07/owl#onProperty> <http://vivoweb.org/ontology/core#featuredIn> .
+<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://xmlns.com/foaf/0.1/> <http://www.w3.org/2000/01/rdf-schema#label> "FOAF (Friend of a Friend)" .

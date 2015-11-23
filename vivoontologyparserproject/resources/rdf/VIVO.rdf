@@ -1,0 +1,2292 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#"
+    xmlns:j.1="http://purl.obolibrary.org/obo/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:j.2="http://purl.org/ontology/bibo/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:j.3="http://vivoweb.org/ontology/core#">
+  <owl:Ontology rdf:about="http://vivoweb.org/ontology/core">
+    <rdfs:label>VIVO-ISF Ontology version 1.6</rdfs:label>
+  </owl:Ontology>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#boolean"/>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#int"/>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#University">
+    <j.1:IAO_0000112>University of Florida; Washington University in St. Louis</j.1:IAO_0000112>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <j.1:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    <j.1:IAO_0000115>An institution of higher education and research, which grants academic degrees in a variety of subjects, and provides both undergraduate education and postgraduate education.</j.1:IAO_0000115>
+    <j.1:IAO_0000112>Definition taken from: http://en.wikipedia.org/wiki/University</j.1:IAO_0000112>
+    <rdfs:label>University</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Exhibit">
+    <rdfs:label>Exhibit</rdfs:label>
+    <j.1:IAO_0000115>The showing of an object or a collection of objects, in an organized manner.</j.1:IAO_0000115>
+    <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#AttendingProcess">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    <rdfs:label>Attending Process</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Licensure">
+    <j.1:IAO_0000112>A granted license, which gives a 'permission to practice.' Such licenses are usually issued in order to regulate some activity that is deemed to be dangerous or a threat to the person or the public or which involves a high level of specialized skill.  See also core:License.</j.1:IAO_0000112>
+    <rdfs:label>Licensure</rdfs:label>
+    <j.1:IAO_0000115>A granted license, which gives a 'permission to practice.'</j.1:IAO_0000115>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://vivoweb.org/ontology/core#IssuedCredential"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Student">
+    <rdfs:label>Student</rdfs:label>
+    <j.1:IAO_0000112>Use only if no specific subclasses of core:Student describe the person.</j.1:IAO_0000112>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <j.1:IAO_0000115>A person who is enrolled in an educational institution.</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Association">
+    <rdfs:label>Association</rdfs:label>
+    <j.1:IAO_0000115>A formal organization of people or groups of people around a subject or practice.</j.1:IAO_0000115>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <j.1:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    <j.1:IAO_0000115>A group of persons or organizations organized for a common purpose.</j.1:IAO_0000115>
+    <j.1:IAO_0000112>Special Libraries Association; Association for Computing Machinery(ACM); American Medical Informatics Association(AMIA)</j.1:IAO_0000112>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#SubnationalRegion">
+    <j.1:IAO_0000112>Boroughs; townships; districts; the Midwest</j.1:IAO_0000112>
+    <j.1:IAO_0000115>Smaller administrative division into which a country may be divided.</j.1:IAO_0000115>
+    <j.1:IAO_0000112>Short definition was partially taken from http://en.wikipedia.org/wiki/Subnational_entity.</j.1:IAO_0000112>
+    <rdfs:comment>For example, the Midwest, northeast U.S.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://vivoweb.org/ontology/core#GeographicRegion"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Subnational Region</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#AcademicDegree">
+    <j.1:IAO_0000112>This list may have multiple abbreviations for some degrees.</j.1:IAO_0000112>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:FunctionalProperty rdf:about="http://vivoweb.org/ontology/core#abbreviation"/>
+        </owl:onProperty>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Academic Degree</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <j.1:IAO_0000115>An academic degree at any level, both as reported by individuals for employment and as offered by academic degree programs.</j.1:IAO_0000115>
+    <j.1:IAO_0000112>B.A. Bachelor of Arts</j.1:IAO_0000112>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:FunctionalProperty rdf:about="http://vivoweb.org/ontology/core#abbreviation"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#GraduateStudent">
+    <rdfs:label>Graduate Student</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Student"/>
+    <j.1:IAO_0000115>A person who has already received a bachelor's degree and is working toward a Master's or Doctoral degree.</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#PresentingProcess">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    <rdfs:label>Presenting Process</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#PresenterRole">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    <rdfs:label>Presenter Role</rdfs:label>
+    <j.1:IAO_0000115>A role of presenting information</j.1:IAO_0000115>
+    <j.1:IAO_0000112>Are we assuming that a PresenterRole is in a Presentation?  Or could you have a PresenterRole in, say, a committee?</j.1:IAO_0000112>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Credential">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <owl:onProperty>
+          <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasGoverningAuthority">
+            <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+            <rdfs:label>governing authority</rdfs:label>
+          </rdf:Description>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label>Credential</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasSubjectArea"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://vivoweb.org/ontology/core#GeographicLocation"/>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#validIn"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <j.1:IAO_0000115>An attestation of qualification, competence, or authority issued to an individual by a third party with a relevant or  de facto authority or assumed competence to do so.</j.1:IAO_0000115>
+    <j.1:IAO_0000112>An attestation of qualification, competence, or authority issued to an individual by a third party with a relevant or  de facto authority or assumed competence to do so.</j.1:IAO_0000112>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Location">
+    <j.1:IAO_0000115>Top level of all location classes.</j.1:IAO_0000115>
+    <rdfs:label>Location</rdfs:label>
+    <j.1:IAO_0000112>Use subclasses of core:Location when classsifying items.</j.1:IAO_0000112>
+    <j.1:IAO_0000112>It's anticipated that the subclasses will be used when classifying items. And, all locations can be viewable via this class.</j.1:IAO_0000112>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#PostdocPosition">
+    <j.1:IAO_0000115>A postdoctoral training appointment (job)</j.1:IAO_0000115>
+    <rdfs:label>Postdoctoral Position</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://vivoweb.org/ontology/core#NonFacultyAcademicPosition"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Building">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://vivoweb.org/ontology/core#Facility"/>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://vivoweb.org/ontology/core#Room"/>
+        </owl:allValuesFrom>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <j.1:IAO_0000112>Martha Van Rensselaer Hall (VR); Caldwell Hall (CD); University Auditorium</j.1:IAO_0000112>
+    <j.1:IAO_0000112>Enter building name. If the building's name is a number (as in many governmental organizations such as national laboratories and military bases), then enter it. Do not confuse with the number that appears in a postal address.</j.1:IAO_0000112>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://vivoweb.org/ontology/core#Facility"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Building</rdfs:label>
+    <j.1:IAO_0000115>Building that provides a particular service or is used for a particular activity.</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#NonFacultyAcademicPosition">
+    <rdfs:label>Non-Faculty Academic Position</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://vivoweb.org/ontology/core#Position"/>
+    </rdfs:subClassOf>
+    <j.1:IAO_0000112>Researcher; Academic Extension Associate; Postdoctoral Associate</j.1:IAO_0000112>
+    <j.1:IAO_0000115>A position involving academic work but without faculty status</j.1:IAO_0000115>
+    <j.1:IAO_0000112>Those positions are held by people who do academic work but do not have faculty positions in universities or institutes.</j.1:IAO_0000112>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#EmeritusFaculty">
+    <j.1:IAO_0000115>A retired faculty member who has retained their rank, title and privileges.</j.1:IAO_0000115>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:label>Faculty Member Emeritus</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Video">
+    <j.1:IAO_0000115>Audiovisual recording in video format</j.1:IAO_0000115>
+    <rdfs:label>Video</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/AudioVisualDocument"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Database">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#publisher"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <j.1:IAO_0000115>A structured file of information or a set of logically related data stored and retrieved using computer-based means</j.1:IAO_0000115>
+    <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/CollectedDocument"/>
+    <rdfs:label>Database</rdfs:label>
+    <j.1:IAO_0000112>Short Definition is the Medical Subject Heading (MeSH) definition</j.1:IAO_0000112>
+    <j.1:IAO_0000112>PubMed</j.1:IAO_0000112>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#County">
+    <j.1:IAO_0000112>Alachua; Baker; Bradford; Kenora; Ottawa; Waterloo</j.1:IAO_0000112>
+    <j.1:IAO_0000115>The largest administrative division of most states or provinces.</j.1:IAO_0000115>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://vivoweb.org/ontology/core#GeopoliticalEntity"/>
+    </rdfs:subClassOf>
+    <j.1:IAO_0000112>Short Definition modified from the one found here: http://www.thefreedictionary.com/county.</j.1:IAO_0000112>
+    <rdfs:label>County</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Country">
+    <j.1:IAO_0000112>Source of the Short Definition: http://www.thefreedictionary.com/country.  This is also the same as geopolitical.owl:self_governing.</j.1:IAO_0000112>
+    <j.1:IAO_0000112>Afghanistan; Antigua and Barbuda; Cameroon; Iceland; Jamaica; Nigeria; United States of America</j.1:IAO_0000112>
+    <j.1:IAO_0000115>An area of land distinguished by its political autonomy. Politically independent territories.</j.1:IAO_0000115>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://vivoweb.org/ontology/core#GeopoliticalEntity"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Country</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#OrganizerRole">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    <rdfs:label>Organizer Role</rdfs:label>
+    <j.1:IAO_0000115>A role of organizing</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#School">
+    <j.1:IAO_0000115>An institution for instruction in a particular skill or field.</j.1:IAO_0000115>
+    <j.1:IAO_0000112>Definition take from here: http://dictionary.reference.com/browse/school.</j.1:IAO_0000112>
+    <rdfs:label>School</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <j.1:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    <j.1:IAO_0000112>School of Architecture; School of Music</j.1:IAO_0000112>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#PopulatedPlace">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://vivoweb.org/ontology/core#GeopoliticalEntity"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Populated Place</rdfs:label>
+    <j.1:IAO_0000115>Either city or town - a thickly populated area having fixed boundaries and certain local powers of government.</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/scientific-research#Phase0ClinicalTrial">
+    <j.1:IAO_0000115>Phase 0 is a recent designation for exploratory, first-in-human trials  conducted in accordance with the United States Food and Drug Administration's (FDA) 2006 Guidance on Exploratory Investigational New Drug (IND) Studies.  Phase 0 trials are also known as human microdosing  studies and are designed to speed up the development of promising drugs or imaging agents by establishing very early on whether the drug or agent behaves in human subjects as was expected from preclinical studies.</j.1:IAO_0000115>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000016"/>
+    <rdfs:label>Phase 0 Clinical Trial</rdfs:label>
+    <j.1:IAO_0000115>Phase 0 Clinical Trial</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Competition">
+    <j.1:IAO_0000115>An occasion on which a winner is selected from among two or more contestants.</j.1:IAO_0000115>
+    <j.1:IAO_0000112>Not the same as an award or distinction.</j.1:IAO_0000112>
+    <rdfs:label>Competition</rdfs:label>
+    <j.1:IAO_0000112>Intel Talent Search; poetry contest</j.1:IAO_0000112>
+    <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#NonAcademic">
+    <j.1:IAO_0000115>A person holding a position that is not considered to be an academic appointment.</j.1:IAO_0000115>
+    <rdfs:label>Non-Academic</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#OrganizingProcess">
+    <rdfs:label>Organizing Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Internship">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://vivoweb.org/ontology/core#EducationalProcess"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Internship</rdfs:label>
+    <j.1:IAO_0000115>Typically a student or a recent graduate undergoing supervised practical training.</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Abstract">
+    <j.1:IAO_0000115>An abstract that is published as a standalone document or in a journal of abstracts</j.1:IAO_0000115>
+    <rdfs:label>Abstract</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Blog">
+    <j.1:IAO_0000112>Blog is short for weblog.</j.1:IAO_0000112>
+    <rdfs:label>Blog</rdfs:label>
+    <j.1:IAO_0000115>Regularly updated online journal or newsletter by one or more writers, called bloggers, containing articles and commentary of interest to the blogger</j.1:IAO_0000115>
+    <j.1:IAO_0000112>Library of Congress Blog</j.1:IAO_0000112>
+    <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Website"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Museum">
+    <j.1:IAO_0000112>The Getty Museum</j.1:IAO_0000112>
+    <j.1:IAO_0000112>Definition was take from here:  http://dictionary.reference.com/browse/museum</j.1:IAO_0000112>
+    <j.1:IAO_0000115>An organization devoted to the acquisition, conservation, study, exhibition, and educational interpretation of objects having scientific, historical, cultural or artistic value.</j.1:IAO_0000115>
+    <rdfs:label>Museum</rdfs:label>
+    <j.1:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#NewsRelease">
+    <j.1:IAO_0000115>A short written piece focused on an event or announcement of note, having a defined publication time and of less enduring interest than a news feature.</j.1:IAO_0000115>
+    <rdfs:label>News Release</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Postdoc">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://vivoweb.org/ontology/core#NonFacultyAcademic"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Postdoc</rdfs:label>
+    <j.1:IAO_0000115>A Person holding an academic employment appointment focused on research rather than teaching; temporary (or for some defined term)</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#ConferenceSeries">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://vivoweb.org/ontology/core#EventSeries"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Conference Series</rdfs:label>
+    <j.1:IAO_0000115>An organized series of a meeting for consultation or discussion.</j.1:IAO_0000115>
+    <j.1:IAO_0000112>For individual, separate conferences, use conference instead.  core:ConferenceSeries and core:SeminarSeries are very similar.</j.1:IAO_0000112>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#ResearchProposal">
+    <rdfs:label>Research Proposal</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+    <j.1:IAO_0000115>A proposal for a research grant that has been submitted but not approved; does not represent an existing activity</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Publisher">
+    <j.1:IAO_0000112>Elsevier; Harper &amp; Row; Indiana University Press</j.1:IAO_0000112>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <j.1:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    <j.1:IAO_0000112>Definition found here: http://dictionary.reference.com/browse/publisher</j.1:IAO_0000112>
+    <rdfs:label>Publisher</rdfs:label>
+    <j.1:IAO_0000115>A person or company whose business is the publishing of books, periodicals, engravings, computer software, etc.</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#GovernmentAgency">
+    <j.1:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <j.1:IAO_0000112>United States Library of Congress</j.1:IAO_0000112>
+    <rdfs:label>Government Agency</rdfs:label>
+    <j.1:IAO_0000115>A unit of government responsible for oversight and regulation of certain activities or the administration and provision of specific services.</j.1:IAO_0000115>
+    <j.1:IAO_0000112>Definition take from: http://en.wikipedia.org/wiki/Government_agency.</j.1:IAO_0000112>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Institute">
+    <j.1:IAO_0000115>An organization founded to pursue or promote certain research, educational or public policy interests or activities.</j.1:IAO_0000115>
+    <j.1:IAO_0000112>Institute for Fundamental Theory</j.1:IAO_0000112>
+    <j.1:IAO_0000115>An Institute normally has a research focus but may also fulfill instructional or outreach roles</j.1:IAO_0000115>
+    <rdfs:label>Institute</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <j.1:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Center">
+    <j.1:IAO_0000112>Alchohol Education Center; Center for Arts and Public Policy; Hearing Research Center</j.1:IAO_0000112>
+    <j.1:IAO_0000115>An organization where a specified activity is concentrated.</j.1:IAO_0000115>
+    <j.1:IAO_0000115>A place where a particular activity or service is concentrated.</j.1:IAO_0000115>
+    <j.1:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <rdfs:label>Center</rdfs:label>
+    <j.1:IAO_0000112>Short Definition take from http://www.thefreedictionary.com/center.</j.1:IAO_0000112>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#EmeritusProfessor">
+    <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#EmeritusFaculty"/>
+    <rdfs:label>Professor Emeritus</rdfs:label>
+    <j.1:IAO_0000115>A retired professor who has retained their rank, title and privileges.</j.1:IAO_0000115>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Continent">
+    <j.1:IAO_0000112>The seven commonly recognized continents are Africa; Antarctica; Asia; Australia; Europe; North America; South America</j.1:IAO_0000112>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://vivoweb.org/ontology/core#GeographicRegion"/>
+    </rdfs:subClassOf>
+    <j.1:IAO_0000112>Short Definition take from http://en.wiktionary.org/wiki/continent.</j.1:IAO_0000112>
+    <j.1:IAO_0000115>A large contiguous landmass  that is at least partially surrounded by water, together with any islands on its continental shelf.</j.1:IAO_0000115>
+    <rdfs:label>Continent</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/scientific-research#Phase4ClinicalTrial">
+    <rdfs:label>Phase 4 Clinical Trial</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000016"/>
+    <j.1:IAO_0000115>In Phase 4 trials, post marketing studies delineate additional information including the drug's or treatment's risks, benefits, and optimal use.</j.1:IAO_0000115>
+    <j.1:IAO_0000115>Phase 4 Clinical Trial</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Review">
+    <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Article"/>
+    <rdfs:label>Review</rdfs:label>
+    <j.1:IAO_0000115>An article reviewing one or more other information resources (a book, one or more other articles, movies, etc)</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#CoreLaboratory">
+    <j.1:IAO_0000115>A lab providing services such as training, protocols, or access to instruments or software</j.1:IAO_0000115>
+    <rdfs:label>Core Laboratory</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://vivoweb.org/ontology/core#ServiceProvidingLaboratory"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Editorship">
+    <j.1:IAO_0000115>A relationship that represents the recognition of an agent as an editor.</j.1:IAO_0000115>
+    <rdfs:label>Editorship</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#relates"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://vivoweb.org/ontology/core#Relationship"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#relates"/>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Course">
+    <j.1:IAO_0000112>A course as taught in one time period (such as a semester; although note that a course could consist of only one meeting (teaching session)) by one or more instructors, normally but not always for credit. Does not represent either each meeting of the course or the course offering such as Biology 101 taught every semester from 1980 to 2010</j.1:IAO_0000112>
+    <j.1:IAO_0000115>A course as taught in one time period by one or more instructors, normally but not always for credit. Does not represent either each meeting of the course or the course offering such as Biology 101 taught every semester from 1980 to 2010</j.1:IAO_0000115>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#courseCredits"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Course</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#DateTimeValue">
+    <rdfs:label>Date/Time Value</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000148"/>
+    <j.1:IAO_0000115>A date and/or time</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#AcademicYear">
+    <rdfs:label>Academic Year</rdfs:label>
+    <j.1:IAO_0000115>An explicit individual period considered by an academic institution to be its primary academic cycle.</j.1:IAO_0000115>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://vivoweb.org/ontology/core#DateTimeInterval"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#LibrarianPosition">
+    <j.1:IAO_0000112>Librarian; Library Systems Analyst; Music Bibliographer</j.1:IAO_0000112>
+    <rdfs:label>Librarian Position</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://vivoweb.org/ontology/core#Position"/>
+    </rdfs:subClassOf>
+    <j.1:IAO_0000112>It is the common position in libraries.</j.1:IAO_0000112>
+    <j.1:IAO_0000115>A position held  by library and information science professionals, or academic or technical experts, in support of providing information services or materials</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#MemberRole">
+    <rdfs:label>Member Role</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    <j.1:IAO_0000115>A role of being a member in a Process or an Organization</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/scientific-research#Phase3ClinicalTrial">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000016"/>
+    <rdfs:label>Phase 3 Clinical Trial</rdfs:label>
+    <j.1:IAO_0000115>In Phase 3 trials, an experimental study drug or treatment is given to large groups of people (1,000-3,000) to confirm its effectiveness, monitor side effects, compare it to commonly used treatments, and collect information that will allow the experimental drug or treatment to be used safely.</j.1:IAO_0000115>
+    <j.1:IAO_0000115>Phase 3 Clinical Trial</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#FacultyMentoringRelationship">
+    <j.1:IAO_0000115>An advisory relationship in which one faculty member mentors another faculty member.</j.1:IAO_0000115>
+    <rdfs:label>Faculty Mentoring Relationship</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://vivoweb.org/ontology/core#AdvisingRelationship"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#IssuedCredential">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#relates"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://vivoweb.org/ontology/core#Relationship"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://vivoweb.org/ontology/core#Credential"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#relates"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#validIn"/>
+        </owl:onProperty>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://vivoweb.org/ontology/core#GeographicLocation"/>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateIssued"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Issued Credential</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasSubjectArea"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#expirationDate"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#description"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#UndergraduateStudent">
+    <j.1:IAO_0000115>A person registered in an undergraduate program leading to a bachelor's degree or an undergraduate diploma or certificate.</j.1:IAO_0000115>
+    <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Student"/>
+    <rdfs:label>Undergraduate Student</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Project">
+    <rdfs:label>Project</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateTimeInterval"/>
+        </owl:onProperty>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://vivoweb.org/ontology/core#DateTimeInterval"/>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#geographicFocus"/>
+        </owl:onProperty>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://vivoweb.org/ontology/core#GeographicRegion"/>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    <j.1:IAO_0000115>An endeavor, frequently collaborative, that occurs over a finite period of time and is intended to achieve a particular aim.</j.1:IAO_0000115>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#description"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <j.1:IAO_0000112>An endeavor, frequently collaborative, that occurs over a finite period of time and is intended to achieve a particular aim.</j.1:IAO_0000112>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#StateOrProvince">
+    <j.1:IAO_0000112>Minnesota; Michigan; Indiana; New York; Quebec; Manitoba; Ontario</j.1:IAO_0000112>
+    <rdfs:label>State or Province</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://vivoweb.org/ontology/core#GeopoliticalEntity"/>
+    </rdfs:subClassOf>
+    <j.1:IAO_0000115>One of a number of areas or communities having their own governments and forming a federation under a sovereign government, as in the US.</j.1:IAO_0000115>
+    <j.1:IAO_0000112>Source of the Short Definition: http://www.thefreedictionary.com/state.</j.1:IAO_0000112>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#DateTimeValuePrecision">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <j.1:IAO_0000115>Indicates the precision of the value of a DateTimeValue instance.</j.1:IAO_0000115>
+    <rdfs:label>Date/Time Value Precision</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Screenplay">
+    <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+    <rdfs:label>Screenplay</rdfs:label>
+    <j.1:IAO_0000115>Written script for a film production, including dialogue and descriptions of gestures, actions, shooting directions</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Award">
+    <rdfs:label>Award or Honor</rdfs:label>
+    <j.1:IAO_0000112>Wiley Prize in Biomedical Sciences</j.1:IAO_0000112>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <j.1:IAO_0000112>An Award or Honor</j.1:IAO_0000112>
+    <j.1:IAO_0000115>An Award or Honor</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#PostdoctoralTraining">
+    <rdfs:label>Postdoctoral Training</rdfs:label>
+    <j.1:IAO_0000115>Postdoctoral research is academic or scholarly research conducted by a person who has completed his or her doctoral studies, normally within the following five years. It is intended to further deepen expertise in a specialist subject.</j.1:IAO_0000115>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://vivoweb.org/ontology/core#EducationalProcess"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#AwardedDegree">
+    <rdfs:label>Awarded Degree</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#relates"/>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://vivoweb.org/ontology/core#Relationship"/>
+    </rdfs:subClassOf>
+    <j.1:IAO_0000115>The awarding of a degree by an agent to another agent. It is mostly for academic degrees.</j.1:IAO_0000115>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#relates"/>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="http://vivoweb.org/ontology/core#AcademicDegree"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#AttendeeRole">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    <rdfs:label>Attendee Role</rdfs:label>
+    <j.1:IAO_0000115>A role of attending an Event or EventSeries</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Grant">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://vivoweb.org/ontology/core#Relationship"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateTimeInterval"/>
+        </owl:onProperty>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://vivoweb.org/ontology/core#DateTimeInterval"/>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <j.1:IAO_0000112>An intramural or extramural award to support scholarly work, such as UF09179 (VIVO)</j.1:IAO_0000112>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#relates"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Grant</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#assignedBy"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/abstract"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <j.1:IAO_0000115>Financial assistance mechanism providing money, property, or both to an eligible entity to carry out an approved project or activity</j.1:IAO_0000115>
+    <j.1:IAO_0000112>Short definition is from the Glossary of NIH Terms.</j.1:IAO_0000112>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#supportedInformationResource"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#relates"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Score">
+    <j.1:IAO_0000115>Written musical composition for voice or instruments or both</j.1:IAO_0000115>
+    <rdfs:label>Score</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Translation">
+    <rdfs:label>Translation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+    <j.1:IAO_0000115>The result of rendering a work from one language to another</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/scientific-research#Phase2ClinicalTrial">
+    <rdfs:label>Phase 2 Clinical Trial</rdfs:label>
+    <j.1:IAO_0000115>Phase 2 Clinical Trial</j.1:IAO_0000115>
+    <j.1:IAO_0000115>In Phase 2 trials, an experimental study drug or treatment is given to a larger group of people (100-300) to see if it is effective and to further evaluate its safety.</j.1:IAO_0000115>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000016"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Program">
+    <j.1:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <rdfs:label>Program</rdfs:label>
+    <j.1:IAO_0000112>A Cornell graduate field (http://vivo.cornell.edu/index.jsp?home=65535&amp;collection=820)</j.1:IAO_0000112>
+    <j.1:IAO_0000115>An ongoing academic initiative not formalized with department or division status.</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Company">
+    <rdfs:label>Company</rdfs:label>
+    <j.1:IAO_0000115>A legally-recognized business organization</j.1:IAO_0000115>
+    <j.1:IAO_0000115>A legally-recognized business organization.</j.1:IAO_0000115>
+    <j.1:IAO_0000112>from Wikipedia: "A company is a form of business organization. It is an association or collection of individual real persons and/or other companies ... This collection, group or association of persons can be made to exist in law and then a company is itself considered a "legal person". The name company arose because, at least originally, it represented or was owned by more than one real or legal person."</j.1:IAO_0000112>
+    <j.1:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Foundation">
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <j.1:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    <j.1:IAO_0000112>The Ford Foundation</j.1:IAO_0000112>
+    <j.1:IAO_0000115>An institution founded with an endowment to support educational, research, artistic or other charitable activities.</j.1:IAO_0000115>
+    <rdfs:label>Foundation</rdfs:label>
+    <j.1:IAO_0000112>Definition take from: http://dictionary.reference.com/browse/foundation.</j.1:IAO_0000112>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#CaseStudy">
+    <j.1:IAO_0000115>A qualitative descriptive research study of individuals or a group</j.1:IAO_0000115>
+    <rdfs:label>Case Study</rdfs:label>
+    <j.1:IAO_0000112>A form of qualitative descriptive research that is used to study individuals, a small group of participants, or a group as a whole. Medical usage (from MeSH): clinical presentations that may be followed by evaluative studies that eventually lead to a diagnosis.</j.1:IAO_0000112>
+    <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#NonAcademicPosition">
+    <j.1:IAO_0000112>Accounting &amp; Research Services Assistant; Director of Information Technology</j.1:IAO_0000112>
+    <j.1:IAO_0000112>Staff, support, and other non-academic positions.</j.1:IAO_0000112>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://vivoweb.org/ontology/core#Position"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Non-Academic Position</rdfs:label>
+    <j.1:IAO_0000115>A position classified as professional, staff, support, or any other non-academic role</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#InvestigatorRole">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://vivoweb.org/ontology/core#ResearcherRole"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Investigator Role</rdfs:label>
+    <j.1:IAO_0000115>A role in an Agreement (for example, a grant) as a named investigator or key personnel.</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#AdviseeRole">
+    <rdfs:label>Advisee Role</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#ConferencePaper">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="http://purl.org/ontology/bibo/Conference"/>
+        <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/presentedAt"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <j.1:IAO_0000115>A paper presented at a conference; optionally collected into a Proceedings or a special Journal issue</j.1:IAO_0000115>
+    <rdfs:label>Conference Paper</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Article"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Newsletter">
+    <j.1:IAO_0000115>Usually issued periodically, prepared by or for a group or institution to present information to a specific audience, often also made available to the press and public</j.1:IAO_0000115>
+    <j.1:IAO_0000112>The Ornithological Newsletter</j.1:IAO_0000112>
+    <rdfs:label>Newsletter</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Periodical"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#EditorialArticle">
+    <rdfs:label>Editorial Article</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Article"/>
+    <j.1:IAO_0000115>An article of opinion, typically published in a newspaper. For academics, most commonly Op Ed pieces</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Dataset">
+    <j.1:IAO_0000112>US Patent Data; US Job Data</j.1:IAO_0000112>
+    <rdfs:label>Dataset</rdfs:label>
+    <j.1:IAO_0000115>A named collection of data, usually containing only one type of data</j.1:IAO_0000115>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.org/spar/cito/isCitedAsDataSourceBy"/>
+        <owl:allValuesFrom rdf:resource="http://purl.org/ontology/bibo/Document"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#PostdocOrFellowAdvisingRelationship">
+    <rdfs:label>Postdoc or Fellow Advising Relationship</rdfs:label>
+    <j.1:IAO_0000115>An advisory relationship in which the advisee is a Postdoc or Fellow.</j.1:IAO_0000115>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://vivoweb.org/ontology/core#AdvisingRelationship"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#PrincipalInvestigatorRole">
+    <j.1:IAO_0000115>Role of a person to direct a project or activity being supported by an Agreement (for example, a grant), and who is accountable to the grantee for the proper conduct of the project or activity. Also known as Program Director or Project Director.</j.1:IAO_0000115>
+    <rdfs:label>Principal Investigator Role</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#InvestigatorRole"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#AdvisingRelationship">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#relates"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasSubjectArea"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <j.1:IAO_0000115>A dual relationship of one person being advised or mentored by another person, typically including start and end dates</j.1:IAO_0000115>
+    <rdfs:label>Advising Relationship</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateTimeInterval"/>
+        </owl:onProperty>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://vivoweb.org/ontology/core#DateTimeInterval"/>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://vivoweb.org/ontology/core#AdviseeRole"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#relates"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#relates"/>
+        </owl:onProperty>
+        <owl:someValuesFrom>
+          <owl:Class rdf:about="http://vivoweb.org/ontology/core#AdvisorRole"/>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://vivoweb.org/ontology/core#Relationship"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Team">
+    <j.1:IAO_0000115>An informal organization brought together for the purposes of a project or event</j.1:IAO_0000115>
+    <j.1:IAO_0000115>A group of people working together.</j.1:IAO_0000115>
+    <j.1:IAO_0000112>VIVO Outreach Team; VIVO Ontology Team</j.1:IAO_0000112>
+    <j.1:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    <rdfs:label>Team</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#GeographicLocation">
+    <j.1:IAO_0000112>Use subclasses of core:Geographic Location subclasses instead of this class if possible.</j.1:IAO_0000112>
+    <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Location"/>
+    <j.1:IAO_0000115>A location having coordinates in geographic space.</j.1:IAO_0000115>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#GeographicLocation"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#GeographicLocation"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <j.1:IAO_0000112>Removed the word "stable" because disputed territories from geopolitical.owl are included. This could imply that the geographic coordinates could change. I've also copied this definition to core:Geographic Location.  I think core:Geographic Location and core:Geographic Region are both the same and only one is needed. There is also geopolitical.owl:geographical_region which further causes confusion.</j.1:IAO_0000112>
+    <rdfs:label>Geographic Location</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#FacultyAdministrativePosition">
+    <j.1:IAO_0000112>Associate Dean</j.1:IAO_0000112>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://vivoweb.org/ontology/core#Position"/>
+    </rdfs:subClassOf>
+    <j.1:IAO_0000115>An academic administrative position (associate dean, etc.) as distinct from a professional administrative position (non-academic)</j.1:IAO_0000115>
+    <rdfs:label>Faculty Administrative Position</rdfs:label>
+    <j.1:IAO_0000112>That is a position held by an academic faculty member who works for administration.</j.1:IAO_0000112>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#GraduateAdvisingRelationship">
+    <j.1:IAO_0000115>An advisory relationship in which a professor advises a graduate student.</j.1:IAO_0000115>
+    <rdfs:label>Graduate Advising Relationship</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#AdvisingRelationship"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Certificate">
+    <rdfs:label>Certificate</rdfs:label>
+    <j.1:IAO_0000112>A document confirming certain characteristics of a person or organization, usually provided by some form of external review, education, or assessment.</j.1:IAO_0000112>
+    <j.1:IAO_0000115>A document confirming certain characteristics of a person or organization, usually provided by some form of external review, education, or assessment.</j.1:IAO_0000115>
+    <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Credential"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#NonFacultyAcademic">
+    <j.1:IAO_0000115>A person not considered a faculty member but holding an academic appointment.</j.1:IAO_0000115>
+    <rdfs:label>Non-Faculty Academic</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#AdministratorRole">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    <rdfs:label>Administrator Role</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#ExtensionUnit">
+    <j.1:IAO_0000115>A unit devoted primarily to extension activities, whether for outreach or research.</j.1:IAO_0000115>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <j.1:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    <rdfs:label>Extension Unit</rdfs:label>
+    <j.1:IAO_0000115>A unit devoted primarily to extension activities, whether for outreach or research</j.1:IAO_0000115>
+    <j.1:IAO_0000112>Alachua County Extension Office</j.1:IAO_0000112>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Facility">
+    <rdfs:label>Facility</rdfs:label>
+    <j.1:IAO_0000112>Distinct from the organization that runs it; e.g., a laboratory may be an organization but may be run by another organization and only consist of facilities housing equipment or services. Can be a building or place that provides a particular service or is used for a particular activity. Use the specific Building or Room whenever possible. Short definition from http://dictionary.reference.com/browse/facility.</j.1:IAO_0000112>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#Facility"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <j.1:IAO_0000115>Something designed, built, installed, etc., to serve a specific function or activity affording a convenience or service.</j.1:IAO_0000115>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <j.1:IAO_0000112>Use subclasses of core:Facility subclasses instead of this class if possible</j.1:IAO_0000112>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#InvitedTalk">
+    <rdfs:label>Invited Talk</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://vivoweb.org/ontology/core#Presentation"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#ClinicalOrganization">
+    <rdfs:label>Clinical Organization</rdfs:label>
+    <j.1:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <j.1:IAO_0000115>Any organization with a significant clinical function as a matter of course and not just through occasional clinical roles</j.1:IAO_0000115>
+    <j.1:IAO_0000115>Any organization that offers significant health services or routinely provides medical care to patients.</j.1:IAO_0000115>
+    <j.1:IAO_0000112>In the future we may be able to make this a defined class that would not need to be directly asserted, but the consensus seems to be that some organizations "are" clinical and some "are" research organizations and that the distinction is important enough to warrant the additional class and class assertions</j.1:IAO_0000112>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#PrimaryPosition">
+    <j.1:IAO_0000112>A position designated as primary by the organization or group where it is held. This designation may be applied to zero or more of an agent's positions and may be asserted in conjunction with other subclasses of position.</j.1:IAO_0000112>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://vivoweb.org/ontology/core#Position"/>
+    </rdfs:subClassOf>
+    <j.1:IAO_0000115>A position designated as primary by the organization where it is held.</j.1:IAO_0000115>
+    <rdfs:label>Primary Position</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#OutreachProviderRole">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    <j.1:IAO_0000112>The example is one outreach role required by US space agency NASA, which is related with one project in NASA. Name of the outreach role should be put here.</j.1:IAO_0000112>
+    <j.1:IAO_0000115>An outreach or community service role directed outside a person's primary profession and institution</j.1:IAO_0000115>
+    <rdfs:label>Outreach Provider Role</rdfs:label>
+    <j.1:IAO_0000112>Communicating Astronomy to the Public</j.1:IAO_0000112>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#ConferencePoster">
+    <j.1:IAO_0000115>The digital file (or physical equivalent), if available after the conference, vs. the act of attending/presenting: use ConferencePresentation for information about date/time/location/name of the event where the poster was presented</j.1:IAO_0000115>
+    <rdfs:label>Conference Poster</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#License">
+    <j.1:IAO_0000112>Licenses are usually issued in order to regulate some activity that is deemed to be dangerous or a threat to the person or the public or which involves a high level of specialized skill.  See also core:Licensure.</j.1:IAO_0000112>
+    <rdfs:label>License</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Credential"/>
+    <j.1:IAO_0000115>Official or legal permission to do something</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#F1000Link">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/vcard/ns#URL"/>
+    <j.1:IAO_0000112>F1000 is a place where faculty go to critique papers published in PubMed. Any given record in F1000 might have anywhere from one to dozens of reviews.</j.1:IAO_0000112>
+    <rdfs:label>F1000 Link</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#GeographicRegion">
+    <j.1:IAO_0000112>Removed the word "stable" because disputed territories from geopolitical.owl are included. This could imply that the geographic coordinates could change. This definition was originally in core:Geographic Location.  I simply copied the definition from there.  I think core:Geographic Location and core:Geographic Region are both the same and only one is needed. There is also geopolitical.owl:geographical_region which further causes confusion.</j.1:IAO_0000112>
+    <j.1:IAO_0000112>Use subclasses of core:Geographic Region subclasses instead of this class if possible.</j.1:IAO_0000112>
+    <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#GeographicLocation"/>
+    <rdfs:label>Geographic Region</rdfs:label>
+    <j.1:IAO_0000115>A location having coordinates in geographic space.</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Contract">
+    <j.1:IAO_0000115>An agreement involving specific deliverables and payment</j.1:IAO_0000115>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#relates"/>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/abstract"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#relates"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateTimeInterval"/>
+        </owl:onProperty>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="http://vivoweb.org/ontology/core#DateTimeInterval"/>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#assignedBy"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Contract</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://vivoweb.org/ontology/core#Relationship"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#supportedInformationResource"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/scientific-research#Phase1ClinicalTrial">
+    <j.1:IAO_0000115>In Phase I trials, researchers test an experimental drug or treatment in a small group of people (20-80) for the first time to evaluate its safety, determine a safe dosage range, and identify side effects</j.1:IAO_0000115>
+    <j.1:IAO_0000115>Phase 1 Clinical Trial</j.1:IAO_0000115>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000016"/>
+    <rdfs:label>Phase 1 Clinical Trial</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#ResearchOrganization">
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <j.1:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    <j.1:IAO_0000115>Any organization (likely also asserted as another class of Organization) with a primary, ongoing research function, not just through occasional roles</j.1:IAO_0000115>
+    <rdfs:label>Research Organization</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#FacultyPosition">
+    <rdfs:label>Faculty Position</rdfs:label>
+    <j.1:IAO_0000115>Academic position in a university or institution</j.1:IAO_0000115>
+    <j.1:IAO_0000112>Professor, associate professor and assistant professor are common positions for academic faculty.</j.1:IAO_0000112>
+    <j.1:IAO_0000112>Professor; Associate Professor; Assistant Professor</j.1:IAO_0000112>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://vivoweb.org/ontology/core#Position"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#College">
+    <rdfs:label>College</rdfs:label>
+    <j.1:IAO_0000112>College of Arts &amp; Sciences; Ivy Tech Community College</j.1:IAO_0000112>
+    <j.1:IAO_0000115>A primary academic unit within a University or a free-standing higher education organization without graduate degree programs.</j.1:IAO_0000115>
+    <j.1:IAO_0000115>A primary academic unit within a University or a free-standing higher education organization without graduate degree programs</j.1:IAO_0000115>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <j.1:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Committee">
+    <j.1:IAO_0000112>Curriculum Steering Committee; PhD Advisory Committee</j.1:IAO_0000112>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
+    <j.1:IAO_0000115>A group of people organized for a specific purpose, whose members are often selected from a larger group to serve for designated periods of time.</j.1:IAO_0000115>
+    <j.1:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    <rdfs:label>Committee</rdfs:label>
+    <j.1:IAO_0000115>A group of people organized for a specific purpose (e.g., a reporting or advisory role), often with a charge and for a specific duration</j.1:IAO_0000115>
+    <j.1:IAO_0000112>There could be many subclasses such as thesis committee or tenure committee, but these may typically be differentiated via the moniker unless distinct properties become important.</j.1:IAO_0000112>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Certification">
+    <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#IssuedCredential"/>
+    <rdfs:label>Certification</rdfs:label>
+    <j.1:IAO_0000115>An issued certificate</j.1:IAO_0000115>
+    <j.1:IAO_0000112>see also core:Certificate</j.1:IAO_0000112>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#GeopoliticalEntity">
+    <j.1:IAO_0000112>Short definition obtained here: http://en.wiktionary.org/wiki/geopolitical_entity.</j.1:IAO_0000112>
+    <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#GeographicRegion"/>
+    <rdfs:label>Geopolitical Entity</rdfs:label>
+    <j.1:IAO_0000112>Use subclasses of core:GeopoliticalEntity subclasses instead of this class if possible.</j.1:IAO_0000112>
+    <j.1:IAO_0000115>A geographical area which is associated with some sort of political  structure.</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Equipment">
+    <rdfs:label>Equipment</rdfs:label>
+    <j.1:IAO_0000112>A network server is one example. Medical schools and research laboratories can list professional equipment, such as microscopes.</j.1:IAO_0000112>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    <j.1:IAO_0000115>A physical object provided for specific purpose, task or occupation.</j.1:IAO_0000115>
+    <j.1:IAO_0000112>server; Bruker Vector-33 FT-IR</j.1:IAO_0000112>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#ResearcherRole">
+    <rdfs:label>Researcher Role</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    <j.1:IAO_0000112>Examples of research can be seen at: http://www.ufl.edu/research/products/index.html.  Note these may have been funded, but the research doesn't have to be funded.  Also, the research may be linked to an Agreement (for example, a Grant), but does not need to be.</j.1:IAO_0000112>
+    <j.1:IAO_0000115>A role of conducting funded or unfunded research,  sometimes linked to an Agreement.</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#TeacherRole">
+    <rdfs:label>Teacher Role</rdfs:label>
+    <j.1:IAO_0000115>A role of serving as an educator</j.1:IAO_0000115>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#FacultyMember">
+    <j.0:descriptionAnnot>Definition from here: http://research.carleton.ca/htr/defs.php.</j.0:descriptionAnnot>
+    <rdfs:label>Faculty Member</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <j.1:IAO_0000115>A person with at least one academic appointment to a specific faculty of a university or institution of higher learning.</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#WorkingPaper">
+    <rdfs:label>Working Paper</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+    <j.1:IAO_0000115>A document created as a basis for discussion or a very early draft of a formal paper</j.1:IAO_0000115>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#placeOfPublication"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#PrivateCompany">
+    <j.1:IAO_0000115>A private company is one that is privately-owned, and thus, is not publicly-traded in the stock market. Members of the general public cannot purchase stock in a private company unless that company chooses to go public and become a public company.</j.1:IAO_0000115>
+    <j.1:IAO_0000112>Publix Super Markets; Ernst &amp; Young; PricewaterhouseCoopers</j.1:IAO_0000112>
+    <j.1:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    <j.1:IAO_0000112>Definition obtained here: http://answers.ask.com/Business/Finance/what_is_a_private_company.  Examples of private companies found here: http://www.forbes.com/2008/11/03/largest-private-companies-biz-privates08-cx_sr_1103private_land.html</j.1:IAO_0000112>
+    <rdfs:label>Private Company</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Company"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#AdvisorRole">
+    <rdfs:label>Advisor Role</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#ReviewerRole">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    <rdfs:label>Reviewer Role</rdfs:label>
+    <j.1:IAO_0000115>A role that encompasses both ongoing reviewer responsibility for a bibo:Collection, such as a Journal or Series, and also a review performed for a bibo:Document, such as a book, academic article or conference paper.</j.1:IAO_0000115>
+    <j.1:IAO_0000112>A role that encompasses both ongoing reviewer responsibility for a bibo:Collection, such as a Journal or Series, and also a review performed for a bibo:Document, such as a book, academic article or conference paper.</j.1:IAO_0000112>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#DateTimeInterval">
+    <j.1:IAO_0000115>a specific period or duration, defined by (optional) start and end date/times.</j.1:IAO_0000115>
+    <rdfs:label>Date/Time Interval</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#SeminarSeries">
+    <j.1:IAO_0000112>Applied Microeconomics Seminars; Future of Rural New York Seminar Series</j.1:IAO_0000112>
+    <j.1:IAO_0000112>For individual seminars, use seminar instead.  core:ConferenceSeries and core:SeminarSeries are very similar.</j.1:IAO_0000112>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://vivoweb.org/ontology/core#EventSeries"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Seminar Series</rdfs:label>
+    <j.1:IAO_0000115>An organized series of a meeting for an exchange of ideas, typically put on by a department or center.</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#AdvisingProcess">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    <rdfs:label>Advising Process</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Presentation">
+    <rdfs:label>Presentation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+    <j.1:IAO_0000115>Encompasses talk, speech, lecture, slide lecture, conference presentation</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#BlogPosting">
+    <j.1:IAO_0000115>An online article or commentary appearing on a blog</j.1:IAO_0000115>
+    <rdfs:label>Blog Posting</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Article"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasPublicationVenue"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#Blog"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <j.1:IAO_0000112>A specific blog posting</j.1:IAO_0000112>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#EmeritusLibrarian">
+    <rdfs:label>Librarian Emeritus</rdfs:label>
+    <j.1:IAO_0000115>A retired librarian who has retained their rank, title and privileges.</j.1:IAO_0000115>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#EditorRole">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    <j.1:IAO_0000112>An ongoing editorial responsibility for a bibo:Collection, such as a Journal or Series</j.1:IAO_0000112>
+    <rdfs:label>Editor Role</rdfs:label>
+    <j.1:IAO_0000115>An ongoing editorial responsibility for a bibo:Collection, such as a Journal or Series</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#UndergraduateAdvisingRelationship">
+    <j.1:IAO_0000115>An advisory relationship in which a professor advises an undergraduate student.</j.1:IAO_0000115>
+    <rdfs:label>Undergraduate Advising Relationship</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#AdvisingRelationship"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Hospital">
+    <j.1:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <j.1:IAO_0000112>Shands at the University of Florida</j.1:IAO_0000112>
+    <j.1:IAO_0000115>An institution that provides medical, surgical, psychiatric or nursing care.</j.1:IAO_0000115>
+    <rdfs:label>Hospital</rdfs:label>
+    <j.1:IAO_0000112>Definition take from: http://dictionary.reference.com/browse/hospital.</j.1:IAO_0000112>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Laboratory">
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <j.1:IAO_0000115>An organizational unit (as opposed to the physical facility) that performs research, provides services, or processes materials</j.1:IAO_0000115>
+    <j.1:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    <j.1:IAO_0000115>An organization unit that facilitates or conduits observation, testing, experimentation, or research in a field of study or practice.</j.1:IAO_0000115>
+    <rdfs:label>Laboratory</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#MedicalResidency">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://vivoweb.org/ontology/core#EducationalProcess"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Medical Residency</rdfs:label>
+    <j.1:IAO_0000115>Residency is a stage of graduate medical training.</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Relationship">
+    <rdfs:label>Relationship</rdfs:label>
+    <j.1:IAO_0000115>a reified relationship</j.1:IAO_0000115>
+    <j.1:IAO_0000112>functions as an n-ary predicate</j.1:IAO_0000112>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#ClinicalRole">
+    <rdfs:label>Clinical Role</rdfs:label>
+    <j.1:IAO_0000115>A role of observing or treating patients</j.1:IAO_0000115>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#EventSeries">
+    <j.1:IAO_0000112>A generic class which may include a conference series, a course section, a seminar series, or a workshop series. When possible, use one of these more specific classes.</j.1:IAO_0000112>
+    <rdfs:label>Event Series</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <owl:onProperty>
+          <rdf:Description rdf:about="http://vivoweb.org/ontology/core#contactInformation">
+            <rdfs:label>contact information</rdfs:label>
+          </rdf:Description>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasSubjectArea"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateTimeInterval"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#description"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <j.1:IAO_0000112>Only use if no specific subclasses of core:EventSeries desribe the activity.</j.1:IAO_0000112>
+    <j.1:IAO_0000115>Two or more events that occur at different times and are connected to each other.</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#PeerReviewerRole">
+    <j.1:IAO_0000115>A role of peer reviewing</j.1:IAO_0000115>
+    <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#ReviewerRole"/>
+    <j.1:IAO_0000112>is a generic term for a process of self-regulation by a profession or a process of evaluation involving qualified individuals within the relevant field. Peer review methods are employed to maintain standards, improve performance and provide credibility. In academia  the term is often used to denote a prepublication review of academic papers; reviewing an academic paper is often called refereeing.
+Contents
+[hide]</j.1:IAO_0000112>
+    <rdfs:label>Peer Reviewer Role</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Meeting">
+    <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+    <j.1:IAO_0000115>A gathering of people for a defined purpose, not necessarily public or announced</j.1:IAO_0000115>
+    <rdfs:label>Meeting</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Library">
+    <rdfs:label>Library</rdfs:label>
+    <j.1:IAO_0000115>An organization maintaining one or more collections of physical and/or electronic information resources for access or lending.</j.1:IAO_0000115>
+    <j.1:IAO_0000112>Marston Science Library</j.1:IAO_0000112>
+    <j.1:IAO_0000112>Used information from this definition: http://dictionary.reference.com/browse/library.</j.1:IAO_0000112>
+    <j.1:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#AcademicTerm">
+    <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
+    <rdfs:label>Academic Term</rdfs:label>
+    <j.1:IAO_0000115>An explicit individual academic term, quarter, or semester rather than the generic fall, spring or summer semester.</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#FundingOrganization">
+    <rdfs:label>Funding Organization</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <j.1:IAO_0000112>National Institute of Health (NIH)</j.1:IAO_0000112>
+    <j.1:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    <j.1:IAO_0000115>An organization that provides financial support to individuals or organizations to carry out specified activities.</j.1:IAO_0000115>
+    <j.1:IAO_0000115>A defined class of organizations that fund Grants</j.1:IAO_0000115>
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://vivoweb.org/ontology/core#Grant"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#assigns"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#ServiceProvidingLaboratory">
+    <rdfs:label>Service Providing Lab</rdfs:label>
+    <j.1:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    <j.1:IAO_0000115>A laboratory that provides services</j.1:IAO_0000115>
+    <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Laboratory"/>
+    <j.1:IAO_0000112>Ideally a defined class -- a Laboratory the provides some Service via the property</j.1:IAO_0000112>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Division">
+    <j.1:IAO_0000115>A major unit or section within a larger organization.</j.1:IAO_0000115>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <rdfs:label>Division</rdfs:label>
+    <j.1:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#ExtensionUnit"/>
+    <j.1:IAO_0000112>Definition modified from http://www.thefreedictionary.com/division.  It is difficult to tell the difference between a division and a department.</j.1:IAO_0000112>
+    <j.1:IAO_0000112>Cardiovascular Medicine (division within medicine)</j.1:IAO_0000112>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#StudentOrganization">
+    <j.1:IAO_0000115>A student organization is an organization, operated by students at a university, whose membership normally consists only of students.</j.1:IAO_0000115>
+    <j.1:IAO_0000112>Dancin' Gators</j.1:IAO_0000112>
+    <j.1:IAO_0000112>Definition take from here: http://en.wikipedia.org/wiki/Student_society</j.1:IAO_0000112>
+    <rdfs:label>Student Organization</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <j.1:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Room">
+    <j.1:IAO_0000115>Room that provides a particular service or is used for a particular activity.</j.1:IAO_0000115>
+    <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Facility"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#Facility"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <j.1:IAO_0000112>Enter room number of name.</j.1:IAO_0000112>
+    <rdfs:label>Room</rdfs:label>
+    <j.1:IAO_0000112>100 Caldwell Hall; 114 Martha Van Rensselaer (Rushmore Conference Room)</j.1:IAO_0000112>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Librarian">
+    <j.1:IAO_0000115>A person working in a position of librarian or information professional, or academic or technical expert in support of providing information services or materials.</j.1:IAO_0000115>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:label>Librarian</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#EducationalProcess">
+    <j.0:descriptionAnnot>This connects person to their academic degree through this educational training, but can also be used when the training does not result in a degree.</j.0:descriptionAnnot>
+    <j.1:IAO_0000115>Represents educational training that has been received.</j.1:IAO_0000115>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#supplementalInformation"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateTimeInterval"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <j.1:IAO_0000112>Currently any abstract name is given to individuals of this class. This could change in the future.</j.1:IAO_0000112>
+    <rdfs:label>Educational Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Campus">
+    <j.1:IAO_0000112>Cornell Ithaca; Cornell Geneva; Cornell New York City; Cornell Qatar</j.1:IAO_0000112>
+    <rdfs:label>Campus</rdfs:label>
+    <j.1:IAO_0000112>Definition taken from dictionary.com (http://dictionary.reference.com/browse/campus).</j.1:IAO_0000112>
+    <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#GeographicLocation"/>
+    <j.1:IAO_0000115>The grounds of a school, college, university, or hospital. Or, a large, usually suburban, landscaped business or industrial site.</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Consortium">
+    <rdfs:label>Consortium</rdfs:label>
+    <j.1:IAO_0000115>A group  of independent organizations working together toward a common goal, under an expressed agreement.</j.1:IAO_0000115>
+    <j.1:IAO_0000112>Committee on Institutional Cooperation (CIC); The Five Colleges of Ohio</j.1:IAO_0000112>
+    <j.1:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Catalog">
+    <rdfs:label>Catalog</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#placeOfPublication"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <j.1:IAO_0000115>A list of items in a collection; an ordered compilation of item descriptions and sufficient information to afford access to them</j.1:IAO_0000115>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#publisher"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <j.1:IAO_0000112>Short Definition is the Medical Subject Heading (MeSH) definition</j.1:IAO_0000112>
+    <j.1:IAO_0000112>NLM Catalog</j.1:IAO_0000112>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#CoPrincipalInvestigatorRole">
+    <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#InvestigatorRole"/>
+    <j.1:IAO_0000115>Role of co-principal investigator of an Agreement (for example, a grant), who devotes a specified percentage of time and is considered key personnel.</j.1:IAO_0000115>
+    <rdfs:label>Co-Principal Investigator Role</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#AwardReceipt">
+    <rdfs:label>Award or Honor Receipt</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#relates"/>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="http://vivoweb.org/ontology/core#Award"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <j.1:IAO_0000115>The bestowal of an award, honor, or distinction to a person or person's at a particular time.</j.1:IAO_0000115>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#description"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#assignedBy"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateTimeValue"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#relates"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Relationship"/>
+    <j.1:IAO_0000112>The award bestowed may be represented with the Award class.</j.1:IAO_0000112>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateTimeInterval"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Speech">
+    <rdfs:label>Speech</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+    <j.1:IAO_0000115>Text of a speech written in preparation for delivery of the speech.</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#AcademicDepartment">
+    <j.1:IAO_0000112>Endodontics (department within a College of Dentistry); English (department within a College of Liberal Arts)</j.1:IAO_0000112>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://vivoweb.org/ontology/core#Department"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Academic Department</rdfs:label>
+    <j.1:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    <j.1:IAO_0000115>A distinct, usually specialized educational unit within an educational organization.</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Department">
+    <j.1:IAO_0000115>A unit within a larger organization that addresses a specific subject or area of activity.</j.1:IAO_0000115>
+    <j.1:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <j.1:IAO_0000112>Definition modified from the definition here: http://dictionary.reference.com/browse/department. It is difficult to tell the difference between and department and a division.</j.1:IAO_0000112>
+    <j.1:IAO_0000112>Legal (department within a company); Use for any non-academic department</j.1:IAO_0000112>
+    <rdfs:label>Department</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#WorkshopSeries">
+    <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#EventSeries"/>
+    <rdfs:label>Workshop Series</rdfs:label>
+    <j.1:IAO_0000112>Use workshop for individual events.</j.1:IAO_0000112>
+    <j.1:IAO_0000115>An organized series of workshop events, whether repetitions of the same workshop or multiple different workshops.</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Position">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#relates"/>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#relates"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <j.1:IAO_0000115>Particular position in an organization, commonly identified by job title, and normally associated with a job description that details the tasks and responsibilities that go with the position.</j.1:IAO_0000115>
+    <rdfs:label>Position</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#rank"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <j.1:IAO_0000112>Director of Admissions and Placement; Associate University Librarian</j.1:IAO_0000112>
+    <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Relationship"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateTimeInterval"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <j.1:IAO_0000112>An employment activity, whether compensated or not. Short definition comes from http://en.wikipedia.org/wiki/Position, and has been modified.</j.1:IAO_0000112>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#Authorship">
+    <j.1:IAO_0000112>Currently any abstract name is given to members of this class. This could change in the future.</j.1:IAO_0000112>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#relates"/>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Authorship</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#relates"/>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#hideFromDisplay"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment></rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Relationship"/>
+    <j.1:IAO_0000112>Authorship of journal articles, books and other original works is a means by which academics communicate the results of their scholarly work, establish priority for their discoveries, and build their reputation among their peers.
+This class allows for linking an author to a publication while indicating information about that author's authorship.</j.1:IAO_0000112>
+    <j.1:IAO_0000115>Contains the authors name, their rank in the publication, and whether or not they are a corresponding author on the publication.</j.1:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://vivoweb.org/ontology/core#LeaderRole">
+    <j.1:IAO_0000115>A leadership role</j.1:IAO_0000115>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    <j.1:IAO_0000112>A broad-ranging leader concept, from leading a small temporary committee to head of a large international organization.</j.1:IAO_0000112>
+    <rdfs:label>Leader Role</rdfs:label>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateTimeInterval">
+    <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
+    <rdfs:label>date/time interval</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#validIn">
+    <rdfs:label>valid in</rdfs:label>
+    <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#GeographicLocation"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#translatorOf">
+    <rdfs:range rdf:resource="http://purl.org/ontology/bibo/Document"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <rdfs:label>translator of</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#sponsors">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#sponsoredBy"/>
+    </owl:inverseOf>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <rdfs:label>sponsors award or honor</rdfs:label>
+    <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#Award"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#eligibleFor">
+    <rdfs:label>credential eligibility attained</rdfs:label>
+    <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#Credential"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#geographicFocus">
+    <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#GeographicRegion"/>
+    <rdfs:label>geographic focus</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#roleContributesTo">
+    <rdfs:label>contributes to</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#contributingRole"/>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#relatedBy">
+    <rdfs:label>related by</rdfs:label>
+    <j.1:IAO_0000115 xml:lang="en">Relates a Thing to a Relationship as a Thing that is somehow related to other Thing in the same Relationship instance. A Relationship instnace is a predicate over Thing and is created by an Agent.</j.1:IAO_0000115>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasAssociatedConcept">
+    <rdfs:label>associated concept</rdfs:label>
+    <owl:inverseOf>
+      <rdf:Description rdf:about="http://vivoweb.org/ontology/core#conceptAssociatedWith">
+        <rdfs:label>concept for</rdfs:label>
+      </rdf:Description>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#end">
+    <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
+    <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
+    <rdfs:label>end</rdfs:label>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateTimeValue"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#sponsoredBy">
+    <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Award"/>
+    <rdfs:label>award sponsored by</rdfs:label>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#facilityFor">
+    <owl:inverseOf>
+      <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasFacility">
+        <rdfs:label>has facility</rdfs:label>
+        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#Facility"/>
+      </rdf:Description>
+    </owl:inverseOf>
+    <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Facility"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#grantSubcontractedThrough">
+    <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Grant"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <rdfs:label>subcontracted through</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#publisherOf">
+    <j.1:IAO_0000112>Public Definition source (http://www.answers.com/topic/publisher).</j.1:IAO_0000112>
+    <rdfs:label>publisher of</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#relates">
+    <rdfs:label>relates</rdfs:label>
+    <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#relatedBy"/>
+    <j.1:IAO_0000115 xml:lang="en">Relates a Relationship instance to the one or more Thing of the Relationship. There is a separate property (assigned by) to relate to the Agent that defines the Relationship.</j.1:IAO_0000115>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#reproduces">
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
+    <owl:inverseOf rdf:resource="http://purl.org/ontology/bibo/reproducedIn"/>
+    <rdfs:label>reproduces</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    <rdfs:range rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateTimePrecision">
+    <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
+    <rdfs:label>date/time precision</rdfs:label>
+    <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#DateTimeValuePrecision"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#assigneeFor">
+    <rdfs:range rdf:resource="http://purl.org/ontology/bibo/Patent"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#assignee"/>
+    </owl:inverseOf>
+    <rdfs:label>assignee for patent</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateIssued">
+    <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
+    <rdfs:label>date issued</rdfs:label>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateTimeValue"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasResearchArea">
+    <rdfs:label>research areas</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#hasAssociatedConcept"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#researchAreaOf"/>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#supportedInformationResource">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#informationResourceSupportedBy"/>
+    </owl:inverseOf>
+    <j.0:descriptionAnnot>an information resource (typically a publication) supported by (typically via funding) an agreement (such as a grant)</j.0:descriptionAnnot>
+    <rdfs:label>supported publications or other works</rdfs:label>
+    <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#supports"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasTranslation">
+    <rdfs:range rdf:resource="http://purl.org/ontology/bibo/Document"/>
+    <rdfs:label>has translation</rdfs:label>
+    <owl:inverseOf rdf:resource="http://purl.org/ontology/bibo/translationOf"/>
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
+    <j.1:IAO_0000112>Examples shows a book has French language version. Public description source: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html .</j.1:IAO_0000112>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasEquipment">
+    <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#Equipment"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#equipmentFor"/>
+    </owl:inverseOf>
+    <rdfs:label>has equipment</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasProceedings">
+    <rdfs:range rdf:resource="http://purl.org/ontology/bibo/Proceedings"/>
+    <j.0:descriptionAnnot>A possible working example: The conference proceeding of the SPIE was generated from the conference - International Society for Optical Engineering.</j.0:descriptionAnnot>
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Conference"/>
+    <rdfs:label>proceedings</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#contributingRole">
+    <rdfs:label>contributor</rdfs:label>
+    <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#roleContributesTo"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasCollaborator">
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <rdfs:label>has collaborator</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateFiled">
+    <rdfs:label>date filed</rdfs:label>
+    <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateTimeValue"/>
+    </rdfs:subPropertyOf>
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Patent"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#offers">
+    <rdfs:label>offers</rdfs:label>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#offeredBy"/>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#assignedBy">
+    <j.1:IAO_0000115 xml:lang="en">Relates a Relationship (as a predicate or n-ary relation over one or more Thing) to an Agent that defined or instantiated the predicate instance.</j.1:IAO_0000115>
+    <rdfs:label>assigned by</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#fundingVehicleFor">
+    <rdfs:label>provides funding for</rdfs:label>
+    <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Grant"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#supports"/>
+    </rdfs:subPropertyOf>
+    <owl:inverseOf>
+      <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasFundingVehicle">
+        <rdfs:label>funding provided via</rdfs:label>
+        <rdfs:range>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Class rdf:about="http://vivoweb.org/ontology/core#Contract"/>
+              <owl:Class rdf:about="http://vivoweb.org/ontology/core#Grant"/>
+            </owl:unionOf>
+          </owl:Class>
+        </rdfs:range>
+      </rdf:Description>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#features">
+    <j.1:IAO_0000112>This is done through a restriction on the foaf:Person class.</j.1:IAO_0000112>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    <rdfs:label>features</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#assigns">
+    <rdfs:label>assigns</rdfs:label>
+    <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#assignedBy"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#governingAuthorityFor">
+    <rdfs:label>governing authority for</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#hasGoverningAuthority"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateTime">
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateTimeValue"/>
+    </rdfs:subPropertyOf>
+    <rdfs:label>date/time</rdfs:label>
+    <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
+    <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#supports">
+    <rdfs:label>supports</rdfs:label>
+    <j.0:descriptionAnnot>general relationship of support</j.0:descriptionAnnot>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#equipmentFor">
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Equipment"/>
+    <rdfs:label xml:lang="en-us">equipment for</rdfs:label>
+    <rdfs:label>equipment for</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://isf/deprecated_op"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#publisher">
+    <rdfs:label>publisher</rdfs:label>
+    <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#publisherOf"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <j.1:IAO_0000112>Public Definition source (http://www.answers.com/topic/publisher).</j.1:IAO_0000112>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#assignee">
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Patent"/>
+    <rdfs:label>assignee</rdfs:label>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/scientific-research#documentationFor">
+    <rdfs:label>documentation for project or resource</rdfs:label>
+    <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000460"/>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000004"/>
+          <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000005"/>
+          <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000006"/>
+          <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000014"/>
+          <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000020"/>
+          <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000071"/>
+          <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001716"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#start">
+    <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
+    <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateTimeValue"/>
+    </rdfs:subPropertyOf>
+    <rdfs:label>start</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasSubjectArea">
+    <rdfs:label>has subject area</rdfs:label>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#subjectAreaOf"/>
+    </owl:inverseOf>
+    <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#hasAssociatedConcept"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#offeredBy">
+    <rdfs:label>offered by</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#subcontractsGrant">
+    <rdfs:label>subcontracts grant</rdfs:label>
+    <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#Grant"/>
+    <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#grantSubcontractedThrough"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/scientific-research#protocolRealizedBy">
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000005"/>
+          <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000014"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:label>protocol realized by</rdfs:label>
+    <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000481"/>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000272"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#reviewedIn">
+    <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#Review"/>
+    <j.0:descriptionAnnot>The bibo:reviewOf public description was found here: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html .  As of 26 May 2010, bibo:reviewOf is used with the class Review, but core:reviewIn doesn't seem to be being used.</j.0:descriptionAnnot>
+    <rdfs:label>reviewed in</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#informationResourceSupportedBy">
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#supportedBy"/>
+    </rdfs:subPropertyOf>
+    <rdfs:label>supported by</rdfs:label>
+    <j.0:descriptionAnnot>an information resource (typically a publication) supported by (typically via funding) an agreement (such as a grant)</j.0:descriptionAnnot>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasSuccessorOrganization">
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <rdfs:label>successor organization</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#publicationVenueFor">
+    <rdfs:label>publication venue for</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#degreeCandidacy">
+    <rdfs:label>degree candidacy</rdfs:label>
+    <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#AcademicDegree"/>
+    <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#AdvisingRelationship"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#supportedBy">
+    <j.0:descriptionAnnot>general relationship of support</j.0:descriptionAnnot>
+    <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#supports"/>
+    <rdfs:label>supported by</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#orcidId">
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:label>ORCID iD</rdfs:label>
+    <j.1:IAO_0000112>This is now an object property where the object value is a resource of the form &lt;http://orcid.org/NNNN-NNNN-NNNN-NNNN&gt;.  This is to support connecting VIVO and ORCID in the linked data web.   Note: a person can have multiple ORCID iDs.</j.1:IAO_0000112>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/scientific-research#accessProvidedBy">
+    <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ERO_0000391"/>
+    <rdfs:label>access provided by</rdfs:label>
+    <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000029"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#prerequisiteFor">
+    <rdfs:label>prerequisite for</rdfs:label>
+    <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#Course"/>
+    <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Course"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#subjectAreaOf">
+    <rdfs:label>subject area of</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#conceptAssociatedWith"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasPredecessorOrganization">
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#hasSuccessorOrganization"/>
+    <rdfs:label>predecessor organization</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateTimeValue">
+    <rdfs:label>date/time value</rdfs:label>
+    <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#proceedingsOf">
+    <j.0:descriptionAnnot>A possible working example: The conference proceeding of the SPIE was generated from the conference - International Society for Optical Engineering.</j.0:descriptionAnnot>
+    <rdfs:range rdf:resource="http://purl.org/ontology/bibo/Conference"/>
+    <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#hasProceedings"/>
+    <rdfs:label>proceedings of</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Proceedings"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#affiliatedOrganization">
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <rdfs:label>has affiliated organization</rdfs:label>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#distributesFundingFrom">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#providesFundingThrough"/>
+    </owl:inverseOf>
+    <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#FundingOrganization"/>
+    <j.0:descriptionAnnot>For example, National Science Foundation providesFundingThrough Graduate Research Fellowship Program; National Institutes of Health providesFundingThrough National Center for Research Resources.</j.0:descriptionAnnot>
+    <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#FundingOrganization"/>
+    <rdfs:label>distributes funding from</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#providesFundingThrough">
+    <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#FundingOrganization"/>
+    <j.1:IAO_0000112>For example, National Science Foundation providesFundingThrough Graduate Research Fellowship Program; National Institutes of Health providesFundingThrough National Center for Research Resources.</j.1:IAO_0000112>
+    <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#FundingOrganization"/>
+    <rdfs:label>provides funding through</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasPrerequisite">
+    <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#Course"/>
+    <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Course"/>
+    <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#prerequisiteFor"/>
+    <rdfs:label>has prerequisite</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#expirationDate">
+    <rdfs:label>expiration date</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#dateTimeValue"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#distributes">
+    <owl:inverseOf rdf:resource="http://purl.org/ontology/bibo/distributor"/>
+    <j.0:descriptionAnnot>Public Description for bibo:distributor taken from here:  http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html .</j.0:descriptionAnnot>
+    <rdfs:label>distributes</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasPublicationVenue">
+    <rdfs:label>published in</rdfs:label>
+    <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#publicationVenueFor"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#geographicFocusOf">
+    <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#geographicFocus"/>
+    <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#GeographicRegion"/>
+    <rdfs:label>geographic focus of</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#featuredIn">
+    <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    <rdfs:label>featured in</rdfs:label>
+    <j.0:descriptionAnnot>This is done through a restriction on the foaf:Person class.</j.0:descriptionAnnot>
+    <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#features"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#researchAreaOf">
+    <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#conceptAssociatedWith"/>
+    <rdfs:label>research area of</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#termType">
+    <rdfs:label>term type</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#isCorrespondingAuthor">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label>Is this person a corresponding author?</rdfs:label>
+    <j.0:exampleAnnot>True; False</j.0:exampleAnnot>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Authorship"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#nihmsid">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
+    <rdfs:label>NIH Manuscript Submission System ID</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Article"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#middleName">
+    <rdfs:label>middle name or initial</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#scopusId">
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <j.1:IAO_0000112>Home page for Scopus: http://www.scopus.com/home.url</j.1:IAO_0000112>
+    <rdfs:label>Scopus ID</rdfs:label>
+    <rdfs:subPropertyOf>
+      <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#identifier"/>
+    </rdfs:subPropertyOf>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#eRACommonsId">
+    <rdfs:subPropertyOf>
+      <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#identifier"/>
+    </rdfs:subPropertyOf>
+    <rdfs:label>eRA Commons ID</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#hideFromDisplay">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label>hide from display</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#description">
+    <rdfs:label>description</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#entryTerm">
+    <rdfs:label>entry term</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#localAwardId">
+    <j.1:IAO_0000112>core:localAwardId has a domain of core:Grant, and should be public since that's its public identifier for local use by OSP, accounting, department admins, and the PI</j.1:IAO_0000112>
+    <rdfs:subPropertyOf>
+      <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#identifier"/>
+    </rdfs:subPropertyOf>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://vivoweb.org/ontology/core#Contract"/>
+          <owl:Class rdf:about="http://vivoweb.org/ontology/core#Grant"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:label>local award ID</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#placeOfPublication">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:label>place of publication</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#licenseNumber">
+    <rdfs:label>license number</rdfs:label>
+    <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Licensure"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#supplementalInformation">
+    <rdfs:label>supplemental information</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#overview">
+    <rdfs:label>overview</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/scientific-research#nctId">
+    <j.0:exampleAnnot>NCT00000419</j.0:exampleAnnot>
+    <j.1:IAO_0000115>ClinicalTrials.gov is an ICMJE-acceptable public registry, offering up-to-date information for locating clinical trials for a wide range of diseases and conditions. The U.S. National Institutes of Health (NIH), through its National Library of Medicine (NLM), developed this site in collaboration with the Food and Drug Administration (FDA), as a result of the FDA Modernization Act, which was passed into law in November 1997.   This property should be publically visible since it is one of the principal identifiers in a national registry of clinical trials</j.1:IAO_0000115>
+    <rdfs:label>National Clinical Trials (NCT) number</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#hrJobTitle">
+    <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Position"/>
+    <rdfs:label>HR job title</rdfs:label>
+    <j.0:descriptionAnnot>Definition http://en.wikipedia.org/wiki/Job_title#Job_title.</j.0:descriptionAnnot>
+    <j.0:exampleAnnot>administrative secretary</j.0:exampleAnnot>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#cclCode">
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Patent"/>
+    <rdfs:label>published US Classification Class/subclass (CCL) code</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#researcherId">
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:subPropertyOf>
+      <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#identifier"/>
+    </rdfs:subPropertyOf>
+    <rdfs:label>ISI Researcher ID</rdfs:label>
+    <j.1:IAO_0000112>RearcherID is a Thomson Reuters project where researchers have a place to manage and share their professional information. It will allow them to solve author identity issues while simultaneously adding dynamic citation metrics and collaboration networks to your personal profile.
+Definition source: http://isiwebofknowledge.com/researcherid/</j.1:IAO_0000112>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#departmentOrSchool">
+    <rdfs:label>department or school name within institution</rdfs:label>
+    <j.0:descriptionAnnot>Not intended to be an institution name.</j.0:descriptionAnnot>
+    <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#EducationalProcess"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#identifier">
+    <rdfs:label>identifier</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#pmcid">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
+    <rdfs:label>PubMed Central ID</rdfs:label>
+    <j.1:IAO_0000112>A PMCID is a unique PubMed Central reference number, which is assigned to each full-text record made available A PMCID is a unique PubMed Central reference number, which is assigned to each full-text record made available in PubMed Central. The PMCID is issued shortly after the PI or author approves the PubMed Central formatted web version of the submission.</j.1:IAO_0000112>
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Article"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/scientific-research#irbNumber">
+    <j.1:IAO_0000115>Every clinical trial in the United States must be approved and monitored by an Institutional Review Board (IRB). An IRB is an independent committee of physicians, statisticians, community advocates and others whose objective is to ensure that a clinical trial is ethical and the rights of study participants are protected.</j.1:IAO_0000115>
+    <rdfs:label>Institutional Review Board (IRB) number</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#hasValue">
+    <rdfs:label>has value</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#courseCredits">
+    <rdfs:label>credits</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#majorField">
+    <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#EducationalProcess"/>
+    <rdfs:label>major field of degree</rdfs:label>
+    <j.1:IAO_0000112>Information Science; Computer Science; Anthropology</j.1:IAO_0000112>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#rank">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <j.1:IAO_0000112>this number indicates a position in a list</j.1:IAO_0000112>
+    <rdfs:label>rank</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#patentNumber">
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Patent"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:label>patent number</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
+    <j.1:IAO_0000112>source of definition: http://www.uspto.gov/main/glossary/#p . The following site has patent number formats: http://www.uspto.gov/patents/ebc/kindcodesum.jsp .</j.1:IAO_0000112>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/scientific-research#studyPopulationCount">
+    <rdfs:label>study population count</rdfs:label>
+    <j.1:IAO_0000115>number of human participants in the study (trial).</j.1:IAO_0000115>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#outreachOverview">
+    <j.1:IAO_0000112>Used for a single narrative summary of outreach, typically covering a wide range of activities and time periods; use Outreach Provider Role for information on individual activities</j.1:IAO_0000112>
+    <rdfs:label>outreach overview</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <j.1:IAO_0000112>My extension program consists of developing and reporting disease management strategies that are both economically and environmentally sound for fresh market vegetable production. We hope that some of this testing will result in practices adaptable for organic production.</j.1:IAO_0000112>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#hasMonetaryAmount">
+    <rdfs:label>has monetary amount</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#preferredDisplayOrder">
+    <rdfs:label>preferred display order</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#iclCode">
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Patent"/>
+    <j.1:IAO_0000112>The International classification(s) to which the published application has been assigned.</j.1:IAO_0000112>
+    <rdfs:label>International Classification (ICL) code</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#termLabel">
+    <rdfs:label>term label</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#freetextKeyword">
+    <j.1:IAO_0000112>conservation
+
+use one freetextKeyword assertion for each keyword or phrase.</j.1:IAO_0000112>
+    <rdfs:label>keywords</rdfs:label>
+    <j.1:IAO_0000112>one keyword or phrase per freetextKeyword assertion</j.1:IAO_0000112>
+  </owl:DatatypeProperty>
+  <owl:FunctionalProperty rdf:about="http://vivoweb.org/ontology/core#researchOverview">
+    <rdfs:label>research overview</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <j.1:IAO_0000112>Used for a single narrative summary of research, typically covering a wide range of activities and time periods; use Researcher Role for information on individual activities</j.1:IAO_0000112>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://vivoweb.org/ontology/core#reportId">
+    <rdfs:label>report identifier</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Report"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://vivoweb.org/ontology/core#totalAwardAmount">
+    <rdfs:label>total award amount</rdfs:label>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://vivoweb.org/ontology/core#Contract"/>
+          <owl:Class rdf:about="http://vivoweb.org/ontology/core#Grant"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://vivoweb.org/ontology/core#grantDirectCosts">
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://vivoweb.org/ontology/core#Contract"/>
+          <owl:Class rdf:about="http://vivoweb.org/ontology/core#Grant"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Grant"/>
+    <rdfs:label>direct costs</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://vivoweb.org/ontology/core#sponsorAwardId">
+    <rdfs:label>sponsor award ID</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#identifier"/>
+    <j.1:IAO_0000112>Has a domain of Grant. There is not a strong reason have this be publically visible, since most users would care more about the name of the sponsoring agency than its identifier, but it does no harm to be public.
+
+
+See also core:localAwardId.</j.1:IAO_0000112>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://vivoweb.org/ontology/core#Contract"/>
+          <owl:Class rdf:about="http://vivoweb.org/ontology/core#Grant"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://vivoweb.org/ontology/core#abbreviation">
+    <rdfs:label>abbreviation</rdfs:label>
+    <j.1:IAO_0000112>A short form for an longer title or name.</j.1:IAO_0000112>
+    <j.1:IAO_0000112>B.A.</j.1:IAO_0000112>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://vivoweb.org/ontology/core#teachingOverview">
+    <rdfs:label>teaching overview</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <j.1:IAO_0000112>Used for a single narrative summary of teaching, typically covering a wide range of courses including for credit and non-credit teaching over multiple semesters; the "teaches" property links a person directly with an instance of a Semester Class, typically from an institutional database of record; then use Teacher Role for information about a person's role in non-credit teaching or their specific contribution to individual courses</j.1:IAO_0000112>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://vivoweb.org/ontology/core#seatingCapacity">
+    <j.1:IAO_0000112>55</j.1:IAO_0000112>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <j.1:IAO_0000112>definition modified from: source (http://en.wikipedia.org/wiki/Seating_capacity).</j.1:IAO_0000112>
+    <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Room"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>seating capacity</rdfs:label>
+  </owl:FunctionalProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+  <j.3:DateTimeValuePrecision rdf:about="http://vivoweb.org/ontology/core#yearPrecision">
+    <rdfs:label>yearPrecision</rdfs:label>
+    <rdfs:label>year value</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </j.3:DateTimeValuePrecision>
+  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
+  <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+  <j.3:DateTimeValuePrecision rdf:about="http://vivoweb.org/ontology/core#yearMonthPrecision">
+    <rdfs:label>yearMonthPrecision</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>year-month value</rdfs:label>
+  </j.3:DateTimeValuePrecision>
+  <owl:NamedIndividual rdf:about="http://vivoweb.org/ontology/core#yearMonthDayTimePrecision">
+    <rdfs:label>year-month-day-time value</rdfs:label>
+    <rdf:type rdf:resource="http://vivoweb.org/ontology/core#DateTimeValuePrecision"/>
+    <rdfs:label>yearMonthDayTimePrecision</rdfs:label>
+  </owl:NamedIndividual>
+  <j.2:DocumentStatus rdf:about="http://vivoweb.org/ontology/core#submitted">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>submitted</rdfs:label>
+  </j.2:DocumentStatus>
+  <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+  <j.3:DateTimeValuePrecision rdf:about="http://vivoweb.org/ontology/core#yearMonthDayPrecision">
+    <rdfs:label>yearMonthDayPrecision</rdfs:label>
+    <rdfs:label>year-month-day value</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </j.3:DateTimeValuePrecision>
+  <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#descriptionAnnot"/>
+  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+  <j.2:DocumentStatus rdf:about="http://vivoweb.org/ontology/core#invited">
+    <rdfs:label>invited</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </j.2:DocumentStatus>
+  <j.2:DocumentStatus rdf:about="http://vivoweb.org/ontology/core#inPress">
+    <rdfs:label>in press</rdfs:label>
+    <j.3:description>Document to be published</j.3:description>
+    <j.1:IAO_0000115>Document to be published</j.1:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </j.2:DocumentStatus>
+  <rdf:Description rdf:about="http://vivoweb.org/ontology/scientific-research">
+    <rdfs:label>VIVO Scientific Research Ontology</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

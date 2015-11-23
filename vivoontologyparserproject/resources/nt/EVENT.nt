@@ -1,0 +1,38 @@
+_:B8a869e977b3e683f664e127c22ce27f0 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/RO_0001025> .
+_:B8a869e977b3e683f664e127c22ce27f0 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://vivoweb.org/ontology/core#GeographicLocation> .
+_:B8a869e977b3e683f664e127c22ce27f0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B4faff36fac7674fe227732f183f83efc <http://www.w3.org/2002/07/owl#onProperty> <http://vivoweb.org/ontology/core#description> .
+_:B4faff36fac7674fe227732f183f83efc <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B4faff36fac7674fe227732f183f83efc <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/NET/c4dm/event.owl> <http://www.w3.org/2000/01/rdf-schema#label> "Event Ontology" .
+_:B44ff8de4d58b5507c00eb45701219962 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B44ff8de4d58b5507c00eb45701219962 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/ontology/bibo/Document> .
+_:B44ff8de4d58b5507c00eb45701219962 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/ontology/bibo/presents> .
+<http://purl.org/NET/c4dm/event.owl#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/NET/c4dm/event.owl#Event> <http://purl.obolibrary.org/obo/IAO_0000112> "Only use if no specific subclasses of event:Event are appropriate." .
+<http://purl.org/NET/c4dm/event.owl#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B1ddd78489e754794774ec5015121dd40 .
+<http://purl.org/NET/c4dm/event.owl#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Bf24b9c34c7470b39b021f2e426b21ba1 .
+<http://purl.org/NET/c4dm/event.owl#Event> <http://purl.obolibrary.org/obo/IAO_0000112> "This class will also display instances of subclasses under Event, e.g. Philosophy Department Discussion Club; 2009 Racker Lecture; screening of a documentary. In addition to a location in space and time, an event may have any or all the following qualities: actively participating agents, passive factors, work products. Also, it may be in a virtual space or part of a series such as a lecture series.\n\nThe previous short definition was: \"An arbitrary classification of a space/time region, by a cognitive agent.\"" .
+<http://purl.org/NET/c4dm/event.owl#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000015> .
+<http://purl.org/NET/c4dm/event.owl#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B59ad8d2153b420faa83367694d3f9ad2 .
+<http://purl.org/NET/c4dm/event.owl#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B44ff8de4d58b5507c00eb45701219962 .
+<http://purl.org/NET/c4dm/event.owl#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B8a869e977b3e683f664e127c22ce27f0 .
+<http://purl.org/NET/c4dm/event.owl#Event> <http://purl.obolibrary.org/obo/IAO_0000115> "Something that happens at a given place and time." .
+<http://purl.org/NET/c4dm/event.owl#Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event" .
+<http://purl.org/NET/c4dm/event.owl#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Bfa76dacf5edd1a3b22e49d2f35318fee .
+<http://purl.org/NET/c4dm/event.owl#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B4faff36fac7674fe227732f183f83efc .
+<http://purl.obolibrary.org/obo/IAO_0000112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:Bfa76dacf5edd1a3b22e49d2f35318fee <http://www.w3.org/2002/07/owl#onProperty> <http://vivoweb.org/ontology/core#dateTimeInterval> .
+_:Bfa76dacf5edd1a3b22e49d2f35318fee <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Bfa76dacf5edd1a3b22e49d2f35318fee <http://www.w3.org/2002/07/owl#allValuesFrom> <http://vivoweb.org/ontology/core#DateTimeInterval> .
+_:B1ddd78489e754794774ec5015121dd40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B1ddd78489e754794774ec5015121dd40 <http://www.w3.org/2002/07/owl#onProperty> <http://vivoweb.org/ontology/core#contactInformation> .
+_:B1ddd78489e754794774ec5015121dd40 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+_:B59ad8d2153b420faa83367694d3f9ad2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B59ad8d2153b420faa83367694d3f9ad2 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:B59ad8d2153b420faa83367694d3f9ad2 <http://www.w3.org/2002/07/owl#onProperty> <http://vivoweb.org/ontology/core#hasSubjectArea> .
+<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:Bf24b9c34c7470b39b021f2e426b21ba1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Bf24b9c34c7470b39b021f2e426b21ba1 <http://www.w3.org/2002/07/owl#onProperty> <http://vivoweb.org/ontology/core#geographicFocus> .
+_:Bf24b9c34c7470b39b021f2e426b21ba1 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://vivoweb.org/ontology/core#GeographicRegion> .
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .

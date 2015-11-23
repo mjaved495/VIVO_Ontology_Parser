@@ -1,0 +1,6 @@
+<http://aims.fao.org/aos/geopolitical.owl#GDP> <http://www.w3.org/2000/01/rdf-schema#label> "GDP" .
+<http://aims.fao.org/aos/geopolitical.owl#GDP> <http://purl.org/dc/terms/source> "World Bank http://data.worldbank.org/indicator/NY.GDP.MKTP.CD"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/dc/terms/relation> <http://www.w3.org/2000/01/rdf-schema#label> "relation" .
+<http://purl.org/dc/terms/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/net/OCRe/statistics.owl#curator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/net/OCRe/study_design.owl#Phase_1> <http://purl.org/net/OCRe/statistics.owl#curator> "Simona"^^<http://www.w3.org/2001/XMLSchema#string> .
