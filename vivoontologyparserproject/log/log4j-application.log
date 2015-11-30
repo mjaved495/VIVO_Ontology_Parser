@@ -152,3 +152,5 @@
 2015-11-23 13:12:07 INFO  VivoOntologyParser:136 - Step: Saving DC ontology: (triple count:5)
 2015-11-23 13:12:07 INFO  VivoOntologyParser:113 - Step: Saving unmapped triple (count:7)
 2015-11-23 13:12:07 INFO  VivoOntologyParser:93 - Process completed.
+2015-11-30 10:08:24 INFO  VivoOntologyParser:180 - Step: Loading VIVO Ontology...
+2015-11-30 10:08:24 INFO  VivoOntologyParser:183 - Step: Loading VIVO Ontology... COMPLETED.
