@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#broader">
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">Public description modified from the information on this page: http://www.w3.org/TR/2005/WD-swbp-skos-core-guide-20050510/#sechierarchy .</IAO_0000115>
+	<range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inverseOf xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2004/02/skos/core#narrower"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<descriptionAnnot xmlns="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#">Public description modified from the information on this page: http://www.w3.org/TR/2005/WD-swbp-skos-core-guide-20050510/#sechierarchy .</descriptionAnnot>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">broader concept</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#related">
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">related concept</label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Concept</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrower">
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">narrower concept</label>
+	<range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">Public description modified from the information on this page: http://www.w3.org/TR/2005/WD-swbp-skos-core-guide-20050510/#sechierarchy .</IAO_0000115>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<descriptionAnnot xmlns="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#">Public description modified from the information on this page: http://www.w3.org/TR/2005/WD-swbp-skos-core-guide-20050510/#sechierarchy .</descriptionAnnot>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#descriptionAnnot">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core">
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">SKOS (Simple Knowledge Organization System)</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+
+</rdf:RDF>

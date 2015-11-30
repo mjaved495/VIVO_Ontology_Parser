@@ -1,0 +1,1468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax1">
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://vivoweb.org/ontology/core#placeOfPublication"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax2">
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.org/ontology/bibo/edition"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax3">
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.org/ontology/bibo/eissn"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/Periodical">
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax4"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Periodical</label>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax5"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A group of related documents issued at regular intervals.</comment>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax6"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2008/05/skos#scopeNote">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax7">
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://vivoweb.org/ontology/core#hasPublicationVenue"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/Standard">
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Short Definition from OCLC Input Standards, EntW</IAO_0000112>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Standard</label>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A document describing a standard</comment>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">A specification giving a precise statement of a process or a service requirement, often sanctioned by a nation or industry</IAO_0000115>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/sici">
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Serial Item and Contribution Identifier</comment>
+	<subPropertyOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/identifier"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Serial Item and Contribution Identifier (SICI)</label>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">A sub property of identifier (http://en.wikipedia.org/wiki/SICI).</IAO_0000112>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/CollectedDocument">
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Collected Document</label>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax8"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">Work consisting of collections of previously published works</IAO_0000115>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A document that simultaneously contains other documents.</comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Short Definition is the Medical Subject Heading (MeSH) definition</IAO_0000112>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax9">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.org/ontology/bibo/abstract"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/annotates">
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Critical or explanatory note for a Document.</comment>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">The public description source is: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html.</IAO_0000112>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">annotates</label>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/Patent">
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">A patent is an exclusive right granted for an invention, which is a product or a process that provides, in general, a new way of doing something, or offers a new technical solution to a problem.  In order to be patentable, the invention must fulfill certain conditions. (http://www.wipo.int/patentscope/en/)</IAO_0000112>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A document describing the exclusive right granted by a government to an inventor to manufacture, use, or sell an invention for a certain number of years.</comment>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax10"/>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Patent</label>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax11"/>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">(from BIBO) A document describing the exclusive right granted by a government to an inventor to manufacture, use, or sell an invention for a certain number of years</IAO_0000115>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/Performance">
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A public performance.</comment>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">Something carried out, acted or rendered.</IAO_0000115>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Performance</label>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">unstable</term_status>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/draft">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">draft</label>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/DocumentStatus"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/court">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Public description take from: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html.  Bibo considers this property "unstable".</IAO_0000112>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A court associated with a legal document; for example, that which issues a decision.</comment>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">unstable</term_status>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Court</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/Brief">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">A document stating the facts and points of law of a client's case</IAO_0000115>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">unstable</term_status>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Brief</label>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/LegalCaseDocument"/>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A written argument submitted to a court.</comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/numPages">
+	<subPropertyOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/locator"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">number of pages</label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/Film">
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Film</label>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">Audiovisual recording in film format</IAO_0000115>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">aka movie.</comment>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/AudioVisualDocument"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/issn">
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<subPropertyOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/identifier"/>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">source: http://en.wikipedia.org/wiki/Issn</IAO_0000112>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">International Standard Serial Number</comment>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">International Standard Serial Number (ISSN)</label>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/Bill">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Draft legislation presented for discussion to a legal body.</comment>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Bill</label>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Legislation"/>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">Draft legislation presented for discussion to a legal body</IAO_0000115>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Short Definition from the bibo ontology</IAO_0000112>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax12">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.org/ontology/bibo/pageEnd"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/pmid">
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">PubMed ID</label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">PubMed Identifier</comment>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">The PubMed ID (PMID) identifies a citation record (rather than full-text) in the PubMed database. It is not evidence of compliance with the NIH Public Access Policy, because it does not identify a full-text submission of any kind.</IAO_0000112>
+	<subPropertyOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/identifier"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/peerReviewed">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">peer reviewed</label>
+	<description xmlns="http://vivoweb.org/ontology/core#">&amp;nbsp;Peer review is the process by which articles are chosen to be included in a refereed journal. An editorial board consisting of experts in the same field as the author review the article and decide if it is authoritative enough for publication.</description>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">&amp;nbsp;Peer review is the process by which articles are chosen to be included in a refereed journal. An editorial board consisting of experts in the same field as the author review the article and decide if it is authoritative enough for publication.</IAO_0000115>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/DocumentStatus"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/EditedBook">
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax13"/>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">An edited book.</comment>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">An edited collection of stand-alone articles published as a book</IAO_0000115>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax14"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/CollectedDocument"/>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax15"/>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Best American Science Writing 2009</IAO_0000112>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Edited Book</label>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax16">
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.org/ontology/bibo/pageStart"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/LegalDecision">
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Decision</label>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/LegalCaseDocument"/>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">The written determination of a case, motion or claim by a court or tribunal</IAO_0000115>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">unstable</term_status>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A document containing an authoritative determination (as a decree or judgment) made after consideration of facts or law.</comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax13">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://vivoweb.org/ontology/core#placeOfPublication"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/locator">
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">locator</label>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">definition from: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html</IAO_0000112>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A description (often numeric) that locates an item within a containing document or collection.</comment>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax4">
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.org/ontology/bibo/eissn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/Slideshow">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Slideshow</label>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A presentation of a series of slides, usually presented in front of an audience with written text and images.</comment>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Short Definition from the bibo ontology</IAO_0000112>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">A presentation of a series of slides, usually presented in front of an audience with written text and images</IAO_0000115>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax5">
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.org/ontology/bibo/issn"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/volume">
+	<subPropertyOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/locator"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">volume</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/gtin14">
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Global Trade Item Number 14</comment>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Global Trade Item Number (GTIN-14)</label>
+	<subPropertyOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/identifier"/>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">http://en.wikipedia.org/wiki/Global_Trade_Item_Number.</IAO_0000112>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/abstract">
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">abstract</label>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/dc/terms/</isDefinedBy>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html</IAO_0000112>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#">A summary of the resource.</comment>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/published">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/DocumentStatus"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">published</label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<description xmlns="http://vivoweb.org/ontology/core#">Published document</description>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">Published document</IAO_0000115>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/prefixName">
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">http://dictionary.reference.com/browse/prefix</IAO_0000112>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">name prefix</label>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">The prefix of a name</comment>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Mr; Ms; Mrs</IAO_0000112>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/LegalCaseDocument">
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">unstable</term_status>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">Official court  papers for a case</IAO_0000115>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/LegalDocument"/>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A document accompanying a legal case.</comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Legal Case Document</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/Collection">
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Collection</label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A collection of Documents or Collections</comment>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax17"/>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Collection of information resources that have a unified identity. Archives, museums and libraries often acquire collections on specific subjects and from distinguished authors or researchers. Also includes collections of resources bundled into a license.</IAO_0000112>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Hill Ornithology Collection; Wiley Interscience Online Books Biochemisty Collection</IAO_0000112>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">Collection of information resources that have a unified identity</IAO_0000115>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax6">
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://vivoweb.org/ontology/core#publisher"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/cites">
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">cites</label>
+	<range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/Book">
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Book</label>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax18"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax19"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax20"/>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">A written or printed work of fiction or nonfiction, usually on sheets of paper fastened or bound together within covers</IAO_0000115>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Short Definition copied from bibo ontology</IAO_0000112>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A written or printed work of fiction or nonfiction, usually on sheets of paper fastened or bound together within covers.</comment>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax1"/>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/Workshop">
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Workshop</label>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A seminar, discussion group, or the like, that emphasizes zxchange of ideas and the demonstration and application of techniques, skills, etc.</comment>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">Bibo Definition: A seminar, discussion group, or the like, that emphasizes exchange of ideas and the demonstration and application of techniques, skills, etc.</IAO_0000115>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/affirmedBy">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A legal decision that affirms a ruling.</comment>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">affirmed by</label>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">The public description was taken from here:  http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html</IAO_0000112>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax21">
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.org/spar/c4o/hasGlobalCitationFrequency"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.org/spar/c4o/GlobalCitationCount"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/Chapter">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A chapter of a book.</comment>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">A main division of a book</IAO_0000115>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">unstable</term_status>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Chapter</label>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/BookSection"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/Legislation">
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/LegalDocument"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">Enactments of legislative bodies, published in either statute or code form</IAO_0000115>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Legislation</label>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">unstable</term_status>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">From OCLC Input Standards, EntW</IAO_0000112>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A legal document proposing or enacting a law or a group of laws.</comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/ReferenceSource">
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">A document that presents authoritative reference information, such as a dictionary or encylopedia</IAO_0000115>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Short Definition from the bibo ontology</IAO_0000112>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Reference Source</label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A document that presents authoritative reference information, such as a dictionary or encylopedia .</comment>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">unstable</term_status>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax18">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://vivoweb.org/ontology/core#publisher"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/rejected">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">rejected</label>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/DocumentStatus"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/Note">
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Short Definition from bibo ontology</IAO_0000112>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Note</label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Notes or annotations about a resource.</comment>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">Notes or annotations about a resource</IAO_0000115>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax11">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://vivoweb.org/ontology/core#dateIssued"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/issuer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#">An entity responsible for issuing often informally published documents such as press releases, reports, etc.</comment>
+	<range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">issuer</label>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">unstable</term_status>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<descriptionAnnot xmlns="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#">An entity responsible for issuing often informally published documents such as press releases, reports, etc. This term is classified as unstable by bibo.</descriptionAnnot>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/recipient">
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">recipient</label>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">An agent that receives a communication document.</comment>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax22">
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.org/ontology/bibo/issn"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/section">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">unstable</term_status>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">An section number</comment>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/" xml:lang="en">Di Rado, Alicia. 1995. Trekking through college: Classes explore
+modern society using the world of Star trek. Los Angeles Times, March
+15, sec. A, p. 3.</IAO_0000112>
+	<subPropertyOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/locator"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">section</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/shortDescription">
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">short description</label>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#">A short description of the resource.</comment>
+	<scopeNote xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">The idea here is that while dcterms:description may involve length descriptions, this for short (two or three word) descriptions that could go in a bibliographic entry.</scopeNote>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">unstable</term_status>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/reproducedIn">
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">reproduced in</label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<subPropertyOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+	<range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax23">
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://vivoweb.org/ontology/core#placeOfPublication"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax24">
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://vivoweb.org/ontology/core#abbreviation"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/Manuscript">
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">manuscript</label>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Manuscript</label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Short Definition is the Medical Subject Heading (MeSH) definition</IAO_0000112>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">Works prepared by hand including handwritten or typescript drafts of pre-publication papers or works not otherwise reproduced in multiple copies</IAO_0000115>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">An unpublished Document, which may also be submitted to a publisher for publication.</comment>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/">
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Bibontology</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/CourtReporter">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A collection of legal cases.</comment>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Court Reporter</label>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Supreme Court Reporter</IAO_0000112>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">Collection of legal cases</IAO_0000115>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Periodical"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/reversedBy">
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A legal decision that reverses a ruling.</comment>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">reversed by</label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">The first sentence of the public description was taken from here: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html</IAO_0000112>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax25">
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.org/ontology/bibo/doi"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax26">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://vivoweb.org/ontology/core#publisher"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/Statute">
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Legislation"/>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A bill enacted into law.</comment>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Short Definition from bibo ontology</IAO_0000112>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Statute</label>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">A bill enacted into law</IAO_0000115>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/DocumentStatus">
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Document Status</label>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">The status of a document with respect to its publication.</IAO_0000115>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">The status of the publication of a document.</comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">submitted; accepted; in-press; published; invited; refereed.</IAO_0000112>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">The status of a document with respect to its publication. The statuses are represented as individuals of this class. Use the "show all individuals of this class" button on the class control panel to see the currently defined statuses.</IAO_0000112>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/LegalDocument">
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">a document that states some contractual relationship or grants some right</IAO_0000115>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Legal Document</label>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A legal document; for example, a court decision, a brief, and so forth.</comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/Interview">
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A formalized discussion between two or more people.</comment>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Interview</label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">A conversation between two or more people where questions are asked by the interviewer to obtain information from the interviewee.</IAO_0000115>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">radio or newspaper interview</IAO_0000112>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/Letter">
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Letter</label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">A written or printed communication addressed to a person or organization and usually transmitted by mail</IAO_0000112>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">A written or printed communication addressed to a person or organization and usually transmitted by mail</IAO_0000115>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/PersonalCommunicationDocument"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/subsequentLegalDecision">
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Public description is from comments of this object property in bibo ontology located here: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html</IAO_0000112>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A legal decision on appeal that takes action on a case (affirming it, reversing it, etc.).</comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">subsequent legal decision</label>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax27">
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.org/ontology/bibo/eanucc13"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/presents">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Public Description from source: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html .  Bibo considers the bibo:presents and the bibo:presentedAt unstable terms.  It also indicates that bibo:presents is a sub-property of event:product.</IAO_0000112>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">unstable</term_status>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Relates an event to associated documents; for example, conference to a paper.</comment>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">related documents</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/transcriptOf">
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">unstable</term_status>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Relates a document to some transcribed original.</comment>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">The bibo:transcriptOf public description was found here:  http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html .  Bibo considers this term unstable.</IAO_0000112>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">transcript of</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/unpublished">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/DocumentStatus"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">unpublished</label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/edition">
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">The name defining a special edition of a document. Normally its a literal value composed of a version number and words.</comment>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">edition</label>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/eissn">
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Electronic International Standard Serial Number (EISSN)</label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">eissn stands for Electronic International Standard Serial Number.  source: http://www.definition-of.com/EISSN</IAO_0000112>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">The electronic ISSN number of a periodical.</comment>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<subPropertyOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/identifier"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/isbn10">
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">International Standard Book Number (ISBN) 10</label>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Book"/>
+	<subPropertyOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/identifier"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">http://en.wikipedia.org/wiki/Isbn.</IAO_0000112>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/eanucc13">
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">EAN International-Uniform Code Council (EAN-UCC) 13</label>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Definition source: http://en.wikipedia.org/wiki/European_Article_Numbering-Uniform_Code_Council.
+The Uniform Code Council (UCC) was the Numbering Organization in the USA to administer and manage the EAN.UCC System. In 2005 the UCC changed its name to GS1 US.</IAO_0000112>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">European Article Number/Uniform Commercier Code 13</comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<subPropertyOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/identifier"/>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax28">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax29">
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.org/ontology/bibo/DocumentPart"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/accepted">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/DocumentStatus"/>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">Accepted for publication after peer reviewing</IAO_0000115>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<description xmlns="http://vivoweb.org/ontology/core#">Accepted for publication after peer reviewing</description>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">accepted</label>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax30">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://vivoweb.org/ontology/core#abbreviation"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax31">
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.org/ontology/bibo/pageStart"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2008/05/skos#editorialNote">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/Report">
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax32"/>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Medical Subject Heading (MeSH) definition of Technical Report: Work consisting of a formal report giving details of the investigation and results of a medical or other scientific problem. When issued by a government agency or comparable official body, its contents may be classified, unclassified, or declassified with regard to security clearance. This publication type may also cover a scientific paper or article that records the current state or current position of scientific research and development. If so labeled by the editor or publisher, this publication type may be properly used for journal articles.</IAO_0000112>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A document describing an account or statement describing in detail an event, situation, or the like, usually as the result of observation, inquiry, etc..</comment>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Report</label>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">A document describing an account or statement describing in detail an event, situation, or the like, usually as the result of observation, inquiry, etc.</IAO_0000115>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/Website">
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A group of Webpages accessible on the Web.</comment>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Facebook; VIVOweb.org; Flickr</IAO_0000112>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Website</label>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax33"/>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">unstable</term_status>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">A group of webpages available within a specific parent address or URL on the World Wide Web</IAO_0000115>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/Image">
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Image</label>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">A visual representation such as a photograph or graph</IAO_0000115>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A document that presents visual or diagrammatic information.</comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">photograph; diagram</IAO_0000112>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/AcademicArticle">
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">A specific academic journal article</IAO_0000112>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax27"/>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Academic Article</label>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">Written by scholars for other scholars, typically published in an academic journal with an abstract and bibliography</IAO_0000115>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A scholarly academic article, typically published in a journal.</comment>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Article"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax7"/>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/Proceedings">
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">unstable</term_status>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Book"/>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A compilation of documents published from an event, such as a conference.</comment>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">A compilation of documents published from an event, such as a conference</IAO_0000115>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Short Definition copied from bibo ontology</IAO_0000112>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Proceedings</label>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax34">
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://vivoweb.org/ontology/core#placeOfPublication"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/Conference">
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">2010 International Congress on Autoimmunity; American Libraries Association 2009</IAO_0000112>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax24"/>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">core:Seminar and bibo:Conference are very similar.</IAO_0000112>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A meeting for consultation or discussion.</comment>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Conference</label>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">A meeting for consultation or discussion.</IAO_0000115>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/Hearing">
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">An instance or a session in which testimony and arguments are presented, esp. before an official, as a judge in a lawsuit.</comment>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Hearing</label>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Definiton from Bibo here: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html</IAO_0000112>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">An instance or a session in which testimony and arguments are presented, esp. before an official, as a judge in a lawsuit.</IAO_0000115>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/pageEnd">
+	<subPropertyOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/locator"/>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Ending page number within a continuous page range.</comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">end page</label>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax35">
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.org/ontology/bibo/oclcnum"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/Issue">
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/CollectedDocument"/>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Short Definition from the bibo ontology</IAO_0000112>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">something that is printed or published and distributed, esp. a given number of a periodical</comment>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">something that is printed or published and distributed, esp. a given number of a periodical</IAO_0000115>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Issue</label>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax36">
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.org/ontology/bibo/numPages"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/uri">
+	<subPropertyOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/identifier"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">URI</label>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Definition from: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html</IAO_0000112>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax17">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.org/ontology/bibo/oclcnum"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/status">
+	<range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/DocumentStatus"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">status</label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">paraphrased editorial note from the bibo ontology: We are not defining, using an enumeration, the range of the bibo:status to be a defined list of bibo:DocumentStatus. This is because we want people to be able to define new statuses if needed; and creating such an enumeration would prevent this.</IAO_0000112>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/isbn13">
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">International Standard Book Number (ISBN) 13</label>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Book"/>
+	<subPropertyOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/identifier"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">source: http://en.wikipedia.org/wiki/Isbn.</IAO_0000112>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax14">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.org/ontology/bibo/edition"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#descriptionAnnot">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax37">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://vivoweb.org/ontology/core#features"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/BookSection">
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">A section of a book</IAO_0000115>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Short Definition from the bibo ontology</IAO_0000112>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax2"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Book Section</label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">unstable</term_status>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax12"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/DocumentPart"/>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A section of a book.</comment>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax31"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax32">
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.org/ontology/bibo/distributor"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax38">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.org/ontology/bibo/pageEnd"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/Excerpt">
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/DocumentPart"/>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Short Definition from the bibo ontology</IAO_0000112>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">A passage selected from a larger work</IAO_0000115>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A passage selected from a larger work.</comment>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Excerpt</label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/AudioVisualDocument">
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax39"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">An audio-visual document; film, video, and so forth.</comment>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Audio-Visual Document</label>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">Audiovisual recording in any format</IAO_0000115>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">film; video; Blu-ray</IAO_0000112>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/degree">
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">related degree</label>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">The source of the public description and this info is found here:  http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html.  Bibo considers this term "unstable".  The bibo editorial note is: "We are not defining, using an enumeration, the range of the bibo:degree to the defined list of bibo:ThesisDegree. We won't do it because we want people to be able to define new degress if needed by some special usecases. Creating such an enumeration would restrict this to happen."</IAO_0000112>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<editorialNote xmlns="http://www.w3.org/2008/05/skos#" xml:lang="en">We are not defining, using an enumeration, the range of the bibo:degree to the defined list of bibo:ThesisDegree. We won't do it because we want people to be able to define new degress if needed by some special usecases. Creating such an enumeration would restrict this to happen.</editorialNote>
+	<range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/ThesisDegree"/>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">unstable</term_status>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">The thesis degree.</comment>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax15">
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://vivoweb.org/ontology/core#publisher"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/upc">
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Universal Product Code (UPC)</label>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">source for public description: http://en.wikipedia.org/wiki/Universal_Product_Code.</IAO_0000112>
+	<subPropertyOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/identifier"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Universal Product Code</comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/Map">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Map</label>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Image"/>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A graphical depiction of geographic features.</comment>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">A graphical depiction of geographic features, scientific discipline, scientific data analytical results</IAO_0000115>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">The Short Definition is how the bibo ontology defines Map. It has been extended to include more broader concept of map which includes science maps, social network maps.</IAO_0000112>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">unstable</term_status>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax33">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://vivoweb.org/ontology/core#publisher"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/Code">
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A collection of statutes.</comment>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">A work consisting of texts of rules and regulations related to statutes issued by executive or administrative agencies</IAO_0000115>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Code of Federal Regulations</IAO_0000112>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Periodical"/>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Short Definition from OCLC Input Standards, EntW</IAO_0000112>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Code</label>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/Newspaper">
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">Contains news articles, opinions, features, advertising, and is usually issued daily or weekly</IAO_0000115>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A periodical of documents, usually issued daily or weekly, containing current news, editorials, feature articles, and usually advertising.</comment>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Newspaper</label>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Periodical"/>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">USA Today</IAO_0000112>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/interviewer">
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">An agent that interview another agent.</comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">interviewer</label>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/Slide">
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Short Definition from the bibo ontology</IAO_0000112>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/DocumentPart"/>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">A slide in a slideshow</IAO_0000115>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">unstable</term_status>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Slide</label>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A slide in a slideshow</comment>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax8">
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://vivoweb.org/ontology/core#publisher"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/Article">
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Short Definition modified from the bibo ontology.</IAO_0000112>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">A written composition in prose, usually nonfiction, on a specific topic, forming an independent part of a periodical or book</IAO_0000115>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Article</label>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">A specific journal article</IAO_0000112>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax38"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax25"/>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A written composition in prose, usually nonfiction, on a specific topic, forming an independent part of a book or other publication, as a newspaper or magazine.</comment>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax16"/>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax20">
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.org/ontology/bibo/lccn"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/Document">
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax29"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax40"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Document</label>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax9"/>
+	<IAO_0000111 xmlns="http://purl.obolibrary.org/obo/" xml:lang="en">document</IAO_0000111>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/" xml:lang="en">A collection of information content entities intended to be understood together as a whole</IAO_0000115>
+	<IAO_0000117 xmlns="http://purl.obolibrary.org/obo/" xml:lang="en">PERSON: Lawrence Hunter</IAO_0000117>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax37"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<IAO_0000412 xmlns="http://purl.obolibrary.org/obo/" rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Short Definition from the bibo ontology</IAO_0000112>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax21"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+	<IAO_0000114 xmlns="http://purl.obolibrary.org/obo/" rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A document (noun) is a bounded physical representation of body of information designed with the capacity (and usually intent) to communicate. A document may manifest symbolic, diagrammatic or sensory-representational information.</comment>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/" xml:lang="en">A journal article, patent application, laboratory notebook, or a book</IAO_0000112>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">A bounded physical representation of a body of information designed with the capacity (and usually intent) to communicate</IAO_0000115>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax35"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax36"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/issue">
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Article"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Bibo has the domain of bibo:issue as the class Issue, but an example on their site uses it with Article, referring to the issue number "4"</IAO_0000112>
+	<subPropertyOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/locator"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">issue</label>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax19">
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.org/ontology/bibo/edition"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/asin">
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Amazon Standard Identification Number</comment>
+	<subPropertyOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/identifier"/>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">020530902X</IAO_0000112>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Amazon standard identification number. Source: http://en.wikipedia.org/wiki/Amazon_Standard_Identification_Number.</IAO_0000112>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Amazon Standard Identification Number (ASIN)</label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax10">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://vivoweb.org/ontology/core#publisher"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/translationOf">
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">translation of</label>
+	<range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Examples shows a book has French language version. Public description source: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html .</IAO_0000112>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Relates a translated document to the original document.</comment>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/lccn">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Library of Congress Control Number (LCCN)</label>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Library of Congress Control Number</comment>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Source: http://en.wikipedia.org/wiki/Library_of_Congress_Control_Number.</IAO_0000112>
+	<subPropertyOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/identifier"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/interviewee">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">interviewee</label>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">An agent that is interviewed by another agent.</comment>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax41">
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://vivoweb.org/ontology/core#abbreviation"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax39">
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.org/ontology/bibo/distributor"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/Magazine">
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Magazine</label>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A periodical of magazine Articles. A magazine is a publication that is issued periodically, usually bound in a paper cover, and typically contains essays, stories, poems, etc., by many writers, and often photographs and drawings, frequently specializing in a particular subject or area, as hobbies, news, or sports.</comment>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Periodical"/>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">Contains articles of current events or general interest, geared to the reading public as being informative or recreational</IAO_0000115>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">New Yorker</IAO_0000112>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Abstracts and bibliographies are usually not included in magazines.</IAO_0000112>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/chapter">
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">chapter number</label>
+	<subPropertyOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/locator"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/BookSection"/>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">An chapter number</comment>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">unstable</term_status>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/citedBy">
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">cited by</label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<inverseOf xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.org/ontology/bibo/cites"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/oclcnum">
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">http://info-uri.info/registry/OAIHandler?verb=GetRecord&amp;metadataPrefix=reg&amp;identifier=info:oclcnum/. 
+
+
+bibo has the domain of this property set to the union of Collection and Document.</IAO_0000112>
+	<subPropertyOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/identifier"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">OCLC Identifier</comment>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Online Computer Library Center (OCLC) number</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/Quote">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">An excerpted collection of words.</comment>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Quote</label>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">An excerpted collection of words</IAO_0000115>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Excerpt"/>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Short Definition from the bibo ontology</IAO_0000112>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/doi">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Digital Object Identifier</comment>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<subPropertyOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/identifier"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Digital Object Identifier (DOI)</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/DocumentPart">
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax28"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Document Part</label>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">A distinct part of a larger document or collected document</IAO_0000115>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Short Definition from the bibo ontology</IAO_0000112>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax34"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">a distinct part of a larger document or collected document.</comment>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">unstable</term_status>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax26"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">is defined by</label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/Thesis">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Thesis</label>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax23"/>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">Works created to satisfy the requirements for an academic certification or degree; also called dissertation</IAO_0000115>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax30"/>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A document created to summarize research findings associated with the completion of an academic degree.</comment>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Short Definition from OCLC Input Standards, EntW</IAO_0000112>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax40">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.org/spar/cito/citesAsDataSource"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://vivoweb.org/ontology/core#Dataset"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/translator">
+	<inverseOf xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://vivoweb.org/ontology/core#translatorOf"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+	<subPropertyOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/dc/terms/contributor"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">translator</label>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/PersonalCommunicationDocument">
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">A personal communication manifested in some document.</IAO_0000115>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">A personal communication manifested in some document.</IAO_0000112>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Personal Communication Document</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/pageStart">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Starting page number within a continuous page range.</comment>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<subPropertyOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/locator"/>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">start page</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/Series">
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Methods in Molecular Biology</IAO_0000112>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax3"/>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">A thematic collection of documents, usually books, issued at regular or irregular intervals</IAO_0000115>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax22"/>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A loose, thematic, collection of Documents, often Books.</comment>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Series</label>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/reviewOf">
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">The bibo:reviewOf public description was found here: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html .  As of 26 May 2010, bibo:reviewOf is used with the class Review, but core:reviewIn doesn't seem to be being used.</IAO_0000112>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">review of</label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<inverseOf xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://vivoweb.org/ontology/core#reviewedIn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/distributor">
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">distributor</label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<descriptionAnnot xmlns="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#">Public Description for bibo:distributor taken from here:  http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html .</descriptionAnnot>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/number">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">number</label>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Definition from here: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html</IAO_0000112>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/AudioDocument">
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">phonograph record; tape; CD; DVD; DAT</IAO_0000112>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax42"/>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Audio Document</label>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">An audio document; aka record.</comment>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">Recorded audio in any format</IAO_0000115>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/performer">
+	<subPropertyOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/dc/terms/contributor"/>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">performer</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/presentedAt">
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Relates a document to an event; for example, a paper to a conference.</comment>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">presented at event</label>
+	<descriptionAnnot xmlns="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#">Public Description from source: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html .  Bibo considers the bibo:presents and the bibo:presentedAt unstable terms.  It also indicates that bibo:presents is a sub-property of event:product.</descriptionAnnot>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">unstable</term_status>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+	<inverseOf xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.org/ontology/bibo/presents"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vnax42">
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.org/ontology/bibo/distributor"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/Journal">
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Journal of Information Science; IEEE Intelligent System; Scientometrics</IAO_0000112>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">Contains original scholarly research or review articles by experts in the field</IAO_0000115>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Journal</label>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A periodical of scholarly journal Articles.</comment>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vnax41"/>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Articles usually contain abstracts and bibliographies. Includes peer-reviewed, non-peer-reviewed, and open access journals. Journals are usually indexed in the major academic databases such as PubMed and Web of Science.</IAO_0000112>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Periodical"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/Webpage">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">unstable</term_status>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A web page is an online document available (at least initially) on the world wide web. A web page is written first and foremost to appear on the web, as distinct from other online resources such as books, manuscripts or audio documents which use the web primarily as a distribution mechanism alongside other more traditional methods such as print.</comment>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">One section of a website that appears at a unique address within the parent site's address or URL on the World Wide Web</IAO_0000115>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Webpage</label>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/director">
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">director</label>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A Film director.</comment>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Definition take from this site: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html .</IAO_0000112>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vivoweb.org/ontology/core#description">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/coden">
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">An identifier of serials, still in use by libraries, but replaced by ISSN for any new work</comment>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">CODEN became particularly common in the scientific community as a citation system for periodicals cited in technical- as well in chemistry-related publications and as a search tool in many bibliographic catalogues.
+Definition and description came from Wikipedia here: http://en.wikipedia.org/wiki/CODEN</IAO_0000112>
+	<subPropertyOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/identifier"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">coden</label>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/identifier">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">identifier</label>
+	<subPropertyOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://vivoweb.org/ontology/core#identifier"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/Manual">
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">A small reference book, especially one giving instructions.</comment>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">SDB User Manual</IAO_0000112>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">A book of instructions or guide to a specific topic</IAO_0000115>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">unstable</term_status>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Manual</label>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/ontology/bibo/ThesisDegree">
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Different from general academic degree, thesis degree is achieved through one's completed thesis. Thesis is a document submitted in support of candidature for a degree or professional qualification presenting the author's research and findings(http://en.wikipedia.org/wiki/Thesis_or_dissertation).</IAO_0000112>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">The academic degree of a Thesis.</IAO_0000115>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<isDefinedBy xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</isDefinedBy>
+	<term_status xmlns="http://www.w3.org/2003/06/sw-vocab-status/ns#">stable</term_status>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Thesis Degree</label>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Doctor of Philosophy (Ph.D.)</IAO_0000112>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">The academic degree of a Thesis</comment>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://vivoweb.org/ontology/core#AcademicDegree"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+
+</rdf:RDF>

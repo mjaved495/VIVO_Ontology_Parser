@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description rdf:nodeID="node1a5cg2vm5x1">
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://vivoweb.org/ontology/core#GeographicLocation"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vm5x2">
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://vivoweb.org/ontology/core#description"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/NET/c4dm/event.owl">
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Event Ontology</label>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vm5x3">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://purl.org/ontology/bibo/presents"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/NET/c4dm/event.owl#Event">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">Only use if no specific subclasses of event:Event are appropriate.</IAO_0000112>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vm5x4"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vm5x5"/>
+	<IAO_0000112 xmlns="http://purl.obolibrary.org/obo/">This class will also display instances of subclasses under Event, e.g. Philosophy Department Discussion Club; 2009 Racker Lecture; screening of a documentary. In addition to a location in space and time, an event may have any or all the following qualities: actively participating agents, passive factors, work products. Also, it may be in a virtual space or part of a series such as a lecture series.
+
+The previous short definition was: "An arbitrary classification of a space/time region, by a cognitive agent."</IAO_0000112>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vm5x6"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vm5x3"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vm5x1"/>
+	<IAO_0000115 xmlns="http://purl.obolibrary.org/obo/">Something that happens at a given place and time.</IAO_0000115>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Event</label>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vm5x7"/>
+	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="node1a5cg2vm5x2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vm5x7">
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://vivoweb.org/ontology/core#dateTimeInterval"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vm5x4">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://vivoweb.org/ontology/core#contactInformation"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vm5x6">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://vivoweb.org/ontology/core#hasSubjectArea"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1a5cg2vm5x5">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<onProperty xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://vivoweb.org/ontology/core#geographicFocus"/>
+	<allValuesFrom xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="http://vivoweb.org/ontology/core#GeographicRegion"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+
+</rdf:RDF>

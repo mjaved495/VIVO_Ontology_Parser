@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description rdf:about="http://purl.org/net/OCRe/research.owl#Interventional_study">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/net/OCRe/research.owl">
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">OCRe research</label>
+</rdf:Description>
+
+</rdf:RDF>
