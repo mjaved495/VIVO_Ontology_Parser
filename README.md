@@ -1,8 +1,8 @@
 # VIVO_Ontology_Parser
 
-* @author Muhammad Javed
-* Cornell University
-* Nov 20, 2015
+Muhammad Javed
+Cornell University
+Nov 20, 2015
 
 - VIVO Ontology extends a number of higher-level ontologies such as BIBO, OBO, FOAF, VCARD, EVENT etc.
 - The purpose of this project is to parse the vivo ontology file into its separate ontology modules.
