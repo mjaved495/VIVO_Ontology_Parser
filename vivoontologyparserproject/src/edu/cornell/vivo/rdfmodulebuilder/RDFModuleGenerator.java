@@ -5,6 +5,11 @@ import java.io.IOException;
 
 import com.google.common.io.Files;
 
+/**
+ * This is used to convert ontology modules from nt format to rdf.
+ * @author Muhammad Javed
+ *
+ */
 public class RDFModuleGenerator {
 
 	public static void main(String[] args) {
