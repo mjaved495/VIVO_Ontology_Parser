@@ -11,7 +11,7 @@ Step 1: Convert .owl (or any other format) ontology file into .nt file.
 
 Step 2: Manually Identify the namespaces you would like to capture and link them to an ontology module.
 This is done by 
-- printing out a the list of namepsaces first (method: browseNamespaces(Model model)). 
+- printing out the list of namepsaces first (method: browseNamespaces(Model model)). 
 - exploring the master .nt file mannually and linking different namespaces to their specific ontology modules. (in java class Namespace.java)
 
 Step 3: Running the process.
